@@ -70,15 +70,3 @@ if(config.rtl) {
   gulp.task('watch-rtl', 'Watch files as RTL', watchRTL);
   gulp.task('build-rtl', 'Build all files as RTL', buildRTL);
 }
-
-
-/*--------------
-     Custom
----------------*/
-
-// Copy assets to project folder.
-// The root files are excluded from Romanesco to avoid merge conflicts.
-gulp.task('copy', function () {
-  gulp.src('./dist/semantic.*')
-      .pipe(gulp.dest('./dist/project'));
-});
