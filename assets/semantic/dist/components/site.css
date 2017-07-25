@@ -102,11 +102,11 @@ p:last-child {
 --------------------*/
 
 a {
-  color: #698f73;
+  color: #ff931e;
   text-decoration: none;
 }
 a:hover {
-  color: #448f58;
+  color: #f27e00;
   text-decoration: none;
 }
 
@@ -249,17 +249,17 @@ body:after {
   }
 }
 .primary-color {
-  background-color: #eaf3ec !important;
+  background-color: #ffab51 !important;
 }
 .primary-color.inverted {
-  background-color: #698f73 !important;
+  background-color: #ff931e !important;
   color: #FFFFFF !important;
 }
 .secondary-color {
-  background-color: #edf1f8 !important;
+  background-color: #7cb7e0 !important;
 }
 .secondary-color.inverted {
-  background-color: #5f7ebe !important;
+  background-color: #53a0d6 !important;
   color: #FFFFFF !important;
 }
 #main #sidebar {
@@ -563,3 +563,27 @@ svg.hidden {
          Site Overrides
 *******************************/
 
+.brand.logo {
+  background-size: contain !important;
+  text-indent: -9999rem;
+  background: url("../../img/modx-logo.svg") no-repeat center center;
+  height: 48.8px;
+  min-width: 230.8px;
+}
+.brand.badge {
+  background: url("../../img/modx-badge.svg") no-repeat center center;
+  background-size: contain;
+  height: 36px;
+  width: 36px;
+  text-indent: -9999rem;
+}
+.markdown code:not([class*="language"]) {
+  background: #f5f2f0;
+  margin: 0;
+  padding: .1em .3em;
+  border-radius: 0.28571429em;
+  white-space: normal;
+  color: black;
+  text-shadow: 0 1px white;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}

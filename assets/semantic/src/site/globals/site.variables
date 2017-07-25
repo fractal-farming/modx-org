@@ -1,3 +1,60 @@
 /*******************************
      User Global Variables
 *******************************/
+
+/*******************************
+         Site Settings
+*******************************/
+
+/*-------------------
+       Fonts
+--------------------*/
+
+//@fontName          : 'Quattrocento Sans';
+//@fontNameSecondary : 'Quattrocento';
+//@fontSmoothing     : antialiased;
+//
+//@headerFont        : @fontNameSecondary, serif;
+//@pageFont          : @fontName, sans-serif;
+//
+//@googleFontName    : '@{fontName}:400,700|@{fontNameSecondary}:400';
+//@importGoogleFonts : true;
+//@googleFontSizes   : '400,700';
+//@googleSubset      : 'latin';
+//
+//@googleProtocol    : 'https://';
+//@googleFontRequest : '@{googleFontName}&subset=@{googleSubset}';
+
+/*-------------------
+      Base Sizes
+--------------------*/
+
+/* This is the single variable that controls them all */
+//@emSize   : 14px;
+
+/* The size of page text  */
+//@fontSize : 1.3rem;
+
+
+/*-------------------
+    Border Radius
+--------------------*/
+
+/* See Power-user section below
+   for explanation of @px variables
+*/
+//@relativeBorderRadius: 0;
+//@absoluteBorderRadius: 0;
+//
+//@defaultBorderRadius: @absoluteBorderRadius;
+
+/*-------------------
+    Brand Colors
+--------------------*/
+
+@primaryColor        : #ff931e;
+@secondaryColor      : #53a0d6;;
+
+@lightPrimaryColor   : lighten(@primaryColor, 10);
+@lightSecondaryColor : lighten(@secondaryColor, 10);
+@darkSecondaryColor  : lighten(@secondaryColor, 20);

@@ -302,7 +302,7 @@ a.circular.image > img {
   border: 6px solid #F3F4F5;
 }
 a.circular.image > img:hover {
-  border-color: #698f73;
+  border-color: #ff931e;
 }
 @media only screen and (max-width: 768px) {
   .testimonial.column:not(.logo) .image {
