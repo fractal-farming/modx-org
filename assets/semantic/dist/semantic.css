@@ -734,8 +734,8 @@ svg.hidden {
   background-size: contain !important;
   text-indent: -9999rem;
   background: url("../../img/modx-logo.svg") no-repeat center center;
-  height: 48.8px;
-  min-width: 230.8px;
+  height: 36.6px;
+  min-width: 173.1px;
 }
 
 .brand.badge {
@@ -15452,6 +15452,24 @@ body.detail #main .ui.container:not(.fluid) .ui.stripe.segment:not(.white) > .co
 /*******************************
          Site Overrides
 *******************************/
+
+.ui.segment#hero .center.aligned.column {
+  text-align: left;
+}
+
+.ui.segment#hero .center.aligned.column p {
+  font-size: 1.3rem;
+}
+
+.ui.segment#hero .button {
+  margin-left: 0;
+  margin-bottom: .5em;
+}
+
+.ui.segment.background.modx-badge:before {
+  background-position: 90% -10%;
+  background-size: 40rem;
+}
 /*!
  * # Semantic UI 2.2.11 - Breadcrumb
  * http://github.com/semantic-org/semantic-ui/
@@ -24738,12 +24756,6 @@ a.ui.card:hover,
   margin-left: 0;
   margin-right: 0;
   width: 100% !important;
-}
-
-@media only screen and (max-width: 767px) {
-  .ui.stackable.doubling.cards > .card {
-    width: 100% !important;
-  }
 }
 
 .card .sub.header {

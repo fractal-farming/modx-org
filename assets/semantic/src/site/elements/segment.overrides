@@ -1,3 +1,24 @@
 /*******************************
          Site Overrides
 *******************************/
+
+.ui.segment#hero {
+    .center.aligned.column {
+        text-align: left;
+        p {
+            font-size: 1.3rem;
+        }
+    }
+    .button {
+        margin-left: 0;
+        margin-bottom: .5em;
+    }
+}
+
+// Segments with a Global Background attached
+.ui.segment.background {
+    &.modx-badge:before {
+        background-position: 90% -10%;
+        background-size: 40rem;
+    }
+}

@@ -9,8 +9,8 @@
         text-indent: -9999rem;
 
         background: url("../../img/modx-logo.svg") no-repeat center center;
-        height: 244px * 0.2;
-        min-width: 1154px * 0.2;
+        height: 244px * 0.15;
+        min-width: 1154px * 0.15;
     }
     &.badge {
         background: url("../../img/modx-badge.svg") no-repeat center center;

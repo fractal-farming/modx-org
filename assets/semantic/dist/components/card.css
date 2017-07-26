@@ -1000,11 +1000,6 @@ a.ui.card:hover,
   margin-right: 0;
   width: 100% !important;
 }
-@media only screen and (max-width: 767px) {
-  .ui.stackable.doubling.cards > .card {
-    width: 100% !important;
-  }
-}
 .card .sub.header {
   margin-top: 1em !important;
 }

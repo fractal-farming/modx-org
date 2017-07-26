@@ -567,8 +567,8 @@ svg.hidden {
   background-size: contain !important;
   text-indent: -9999rem;
   background: url("../../img/modx-logo.svg") no-repeat center center;
-  height: 48.8px;
-  min-width: 230.8px;
+  height: 36.6px;
+  min-width: 173.1px;
 }
 .brand.badge {
   background: url("../../img/modx-badge.svg") no-repeat center center;

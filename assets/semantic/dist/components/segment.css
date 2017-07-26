@@ -999,3 +999,17 @@ body.detail #main .ui.container:not(.fluid) .ui.stripe.segment:not(.white) > .co
          Site Overrides
 *******************************/
 
+.ui.segment#hero .center.aligned.column {
+  text-align: left;
+}
+.ui.segment#hero .center.aligned.column p {
+  font-size: 1.3rem;
+}
+.ui.segment#hero .button {
+  margin-left: 0;
+  margin-bottom: .5em;
+}
+.ui.segment.background.modx-badge:before {
+  background-position: 90% -10%;
+  background-size: 40rem;
+}
