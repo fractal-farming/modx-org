@@ -1,0 +1,70 @@
+id: 48
+pagetitle: '01 - ContentBlocks'
+longtitle: 'This group contains all the static files with ContentBlocks settings'
+description: 'For better maintenance and reusability, most ''Display=value'' type ContentBlocks settings were moved to physical files inside the pattern library. Feel free to add your own or use them in your component, but it''s better to leave existing values untouched.'
+alias: contentblocks
+published: 1
+parent: 14
+introtext: ''
+template: 2
+menuindex: 2
+createdby: 1
+createdon: 1500991099
+publishedon: 1500991099
+publishedby: 1
+menutitle: ContentBlocks
+context_key: hub
+uri: patterns/atoms/contentblocks
+properties: '{"contentblocks":{"content":"[{\"layout\":1,\"content\":{\"main\":[{\"chunk_properties\":{},\"field\":19,\"settings\":{\"show_subtitle\":\"0\",\"show_introtext\":\"1\",\"row_tpl\":\"overviewRowBasicCard\",\"cols\":\"two\",\"link_text\":\"Learn more\",\"parent\":\"[[*id]]\",\"title_field\":\"menutitle\",\"title_hierarchy\":\"h3\",\"depth\":\"0\",\"limit\":\"99\",\"show_hidden\":\"0\",\"sortby\":\"menuindex\",\"pagination\":\"0\",\"img_type\":\"[[$cbSettingImageType]]\",\"icon_type\":\"svg\",\"padding\":\"regular\",\"de_emphasize\":\"1\"}}]},\"settings\":[],\"parent\":0,\"title\":\"\"}]","linear":[{"chunk_properties":[],"field":19,"settings":{"show_subtitle":"0","show_introtext":"1","row_tpl":"overviewRowBasicCard","cols":"two","link_text":"Learn more","parent":"[[*id]]","title_field":"menutitle","title_hierarchy":"h3","depth":"0","limit":"99","show_hidden":"0","sortby":"menuindex","pagination":"0","img_type":"[[$cbSettingImageType]]","icon_type":"svg","padding":"regular","de_emphasize":"1"}}],"fieldcounts":{"19":1},"_isContentBlocks":true}}'
+tvs:
+    header_background: '@INHERIT'
+    header_background_img: ''
+    header_cta: '@INHERIT'
+    header_inheritance: '@INHERIT inherit_titles||inherit_background'
+    header_subtitle: '@INHERIT'
+    header_title: '@INHERIT'
+    overview_icon_font: ''
+    overview_icon_svg: ''
+    overview_img_landscape: ''
+    overview_img_pano: ''
+    overview_img_portrait: ''
+    overview_img_priority: landscape
+    overview_img_square: ''
+    overview_img_wide: ''
+    overview_link_text: ''
+    status_assigned_user: ''
+    status_help: ''
+    status_improvements: ''
+    status_indicator: not-done
+    status_notes: ''
+
+-----
+
+<div class="ui vertical stripe segment white">
+    <div class="ui   container">
+        [[$overviewOuter? 
+	&unique_idx=`1846`
+	&layout_id=`1`
+	&layout_column=`main`
+	&layout_idx=`0`
+	&row_tpl=`overviewRowBasicCard`
+	&cols=`two`
+	&parent=`[[*id]]`
+	&title_field=`menutitle`
+	&title_hierarchy=`h3`
+	&depth=`0`
+	&limit=`99`
+	&show_hidden=`0`
+	&sortby=`menuindex`
+	&pagination=`0`
+	&show_subtitle=`0`
+	&show_introtext=`1`
+	&link_text=`Learn more`
+	&img_type=`[[$cbSettingImageType]]`
+	&icon_type=`svg`
+	&padding=`regular`
+	&de_emphasize=`1`
+	]]
+
+    </div>
+</div>

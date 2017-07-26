@@ -1,0 +1,774 @@
+id: 100
+pagetitle: '06 - Resources'
+alias: resources
+published: 1
+parent: 19
+introtext: ''
+template: 2
+menuindex: 7
+createdby: 1
+createdon: 1500991102
+publishedon: 1500991102
+publishedby: 1
+menutitle: Resources
+context_key: hub
+uri: patterns/formulas/resources
+properties: '{"contentblocks":{"content":"[{\"layout\":17,\"content\":{\"preview\":[{\"value\":\"[[[[getResourceLevel:eq=`1`:then=`$topLevelElement`:else=`$innerElement`]]]]\",\"lang\":\"html\",\"field\":13,\"settings\":{\"label\":\"[[%romanesco.patterns.example_label]]\"}}],\"code\":[{\"value\":\"[[Rowboat?\\n    &table=`modx_site_snippets`\\n    &tpl=`displayRawElement`\\n    &where=`{\\\"name\\\":\\\"[[+pattern_name]]\\\"}`\\n]]\",\"lang\":\"php\",\"field\":86,\"settings\":{\"label\":\"[[%romanesco.patterns.code_label]]\"}}],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-5\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"<p>[[getElementDescription? &name=`[[+pattern_name]]` &type=`[[+pattern_template]]`]]\\n<\/p>\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-6\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.usage_title]]\",\"fieldId\":\"contentblocks-field-8\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-9\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-11\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.included_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":84,\"settings\":{\"pattern_list\":\"includedChunks,includedSnippets,includedTVs\",\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[{\"value\":\"[[%romanesco.patterns.referring_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringChunks,referringSnippets,referringTemplates\",\"pattern_name\":\"[[+pattern_name]]\"}}]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-12\"}}],\"field\":76,\"settings\":{\"layout_type\":\"tabs\",\"accordion_type\":\"\",\"tab_type\":\"regular\",\"padding\":\"padded\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"sixteen\",\"alignment\":\"\",\"pattern_name\":\"getResourceLevel\",\"pattern_template\":\"patternLayoutFormula\",\"pattern_status\":\"green\"},\"parent\":0,\"title\":\"\"},{\"layout\":17,\"content\":{\"preview\":[{\"value\":\"[[getChildCount?\\n    &parent=`[[+id]]`\\n]]\",\"lang\":\"html\",\"field\":13,\"settings\":{\"label\":\"[[%romanesco.patterns.example_label]]\"}}],\"code\":[{\"value\":\"[[Rowboat?\\n    &table=`modx_site_snippets`\\n    &tpl=`displayRawElement`\\n    &where=`{\\\"name\\\":\\\"[[+pattern_name]]\\\"}`\\n]]\",\"lang\":\"php\",\"field\":86,\"settings\":{\"label\":\"[[%romanesco.patterns.code_label]]\"}}],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-20\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"<p>[[getElementDescription? &name=`[[+pattern_name]]` &type=`[[+pattern_template]]`]]\\n<\/p>\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-21\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.usage_title]]\",\"fieldId\":\"contentblocks-field-23\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-24\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-26\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.included_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":84,\"settings\":{\"pattern_list\":\"includedChunks,includedSnippets,includedTVs\",\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[{\"value\":\"[[%romanesco.patterns.referring_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringChunks,referringSnippets,referringTemplates\",\"pattern_name\":\"[[+pattern_name]]\"}}]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-27\"}}],\"field\":76,\"settings\":{\"layout_type\":\"tabs\",\"accordion_type\":\"\",\"tab_type\":\"regular\",\"padding\":\"padded\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"six\",\"alignment\":\"\",\"pattern_name\":\"getChildCount\",\"pattern_template\":\"patternLayoutFormula\",\"pattern_status\":\"green\"},\"parent\":0,\"title\":\"\"},{\"layout\":17,\"content\":{\"preview\":[{\"value\":\"[[getCrosslinks?\\n    $tvName=`contributors_id`\\n    $page=`[[*id]]`\\n]]\",\"lang\":\"html\",\"field\":13,\"settings\":{\"label\":\"[[%romanesco.patterns.example_label]]\"}}],\"code\":[{\"value\":\"[[Rowboat?\\n    &table=`modx_site_snippets`\\n    &tpl=`displayRawElement`\\n    &where=`{\\\"name\\\":\\\"[[+pattern_name]]\\\"}`\\n]]\",\"lang\":\"php\",\"field\":86,\"settings\":{\"label\":\"[[%romanesco.patterns.code_label]]\"}}],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-35\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"<p>[[getElementDescription? &name=`[[+pattern_name]]` &type=`[[+pattern_template]]`]]\\n<\/p>\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-36\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.usage_title]]\",\"fieldId\":\"contentblocks-field-38\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-39\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-41\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.included_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":84,\"settings\":{\"pattern_list\":\"includedChunks,includedSnippets,includedTVs\",\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[{\"value\":\"[[%romanesco.patterns.referring_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringChunks,referringSnippets,referringTemplates\",\"pattern_name\":\"[[+pattern_name]]\"}}]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-42\"}}],\"field\":76,\"settings\":{\"layout_type\":\"tabs\",\"accordion_type\":\"\",\"tab_type\":\"regular\",\"padding\":\"padded\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"six\",\"alignment\":\"\",\"pattern_name\":\"getCrosslinks\",\"pattern_template\":\"patternLayoutFormula\",\"pattern_status\":\"yellow\"},\"parent\":0,\"title\":\"\"},{\"layout\":17,\"content\":{\"preview\":[{\"value\":\"{{EXAMPLE SNIPPET CALL}}\",\"lang\":\"html\",\"field\":13,\"settings\":{\"label\":\"[[%romanesco.patterns.example_label]]\"}}],\"code\":[{\"value\":\"[[Rowboat?\\n    &table=`modx_site_snippets`\\n    &tpl=`displayRawElement`\\n    &where=`{\\\"name\\\":\\\"[[+pattern_name]]\\\"}`\\n]]\",\"lang\":\"php\",\"field\":86,\"settings\":{\"label\":\"[[%romanesco.patterns.code_label]]\"}}],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-50\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"<p>[[getElementDescription? &name=`[[+pattern_name]]` &type=`[[+pattern_template]]`]]\\n<\/p>\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-51\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.usage_title]]\",\"fieldId\":\"contentblocks-field-53\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-54\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-56\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.included_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":84,\"settings\":{\"pattern_list\":\"includedChunks,includedSnippets,includedTVs\",\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[{\"value\":\"[[%romanesco.patterns.referring_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringChunks,referringSnippets,referringTemplates\",\"pattern_name\":\"[[+pattern_name]]\"}}]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-57\"}}],\"field\":76,\"settings\":{\"layout_type\":\"tabs\",\"accordion_type\":\"\",\"tab_type\":\"regular\",\"padding\":\"padded\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"six\",\"alignment\":\"\",\"pattern_name\":\"resourceTVInputOptions\",\"pattern_template\":\"patternLayoutFormula\",\"pattern_status\":\"brown\"},\"parent\":0,\"title\":\"\"},{\"layout\":17,\"content\":{\"preview\":[{\"value\":\"{{EXAMPLE SNIPPET CALL}}\",\"lang\":\"html\",\"field\":13,\"settings\":{\"label\":\"[[%romanesco.patterns.example_label]]\"}}],\"code\":[{\"value\":\"[[Rowboat?\\n    &table=`modx_site_snippets`\\n    &tpl=`displayRawElement`\\n    &where=`{\\\"name\\\":\\\"[[+pattern_name]]\\\"}`\\n]]\",\"lang\":\"php\",\"field\":86,\"settings\":{\"label\":\"[[%romanesco.patterns.code_label]]\"}}],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-65\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"<p>[[getElementDescription? &name=`[[+pattern_name]]` &type=`[[+pattern_template]]`]]\\n<\/p>\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-66\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.usage_title]]\",\"fieldId\":\"contentblocks-field-68\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-69\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-71\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.included_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":84,\"settings\":{\"pattern_list\":\"includedChunks,includedSnippets,includedTVs\",\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[{\"value\":\"[[%romanesco.patterns.referring_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringChunks,referringSnippets,referringTemplates\",\"pattern_name\":\"[[+pattern_name]]\"}}]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-72\"}}],\"field\":76,\"settings\":{\"layout_type\":\"tabs\",\"accordion_type\":\"\",\"tab_type\":\"regular\",\"padding\":\"padded\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"six\",\"alignment\":\"\",\"pattern_name\":\"resourceMediaPath\",\"pattern_template\":\"patternLayoutFormula\",\"pattern_status\":\"blue\"},\"parent\":0,\"title\":\"\"}]","linear":[{"value":"[[[[getResourceLevel:eq=`1`:then=`$topLevelElement`:else=`$innerElement`]]]]","lang":"html","field":13,"settings":{"label":"[[%romanesco.patterns.example_label]]"}},{"value":"[[Rowboat?\n    &table=`modx_site_snippets`\n    &tpl=`displayRawElement`\n    &where=`{\"name\":\"[[+pattern_name]]\"}`\n]]","lang":"php","field":86,"settings":{"label":"[[%romanesco.patterns.code_label]]"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-5"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"<p>[[getElementDescription? &name=`[[+pattern_name]]` &type=`[[+pattern_template]]`]]\n<\/p>","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-6"}},{"heading":{"value":"[[%romanesco.patterns.usage_title]]","fieldId":"contentblocks-field-8"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-9"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-11"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.included_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":84,"settings":{"pattern_list":"includedChunks,includedSnippets,includedTVs","pattern_name":"[[+pattern_name]]"}}],"col_2":[{"value":"[[%romanesco.patterns.referring_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringChunks,referringSnippets,referringTemplates","pattern_name":"[[+pattern_name]]"}}]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-12"}}],"field":76,"settings":{"layout_type":"tabs","accordion_type":"","tab_type":"regular","padding":"padded"}},{"value":"[[getChildCount?\n    &parent=`[[+id]]`\n]]","lang":"html","field":13,"settings":{"label":"[[%romanesco.patterns.example_label]]"}},{"value":"[[Rowboat?\n    &table=`modx_site_snippets`\n    &tpl=`displayRawElement`\n    &where=`{\"name\":\"[[+pattern_name]]\"}`\n]]","lang":"php","field":86,"settings":{"label":"[[%romanesco.patterns.code_label]]"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-20"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"<p>[[getElementDescription? &name=`[[+pattern_name]]` &type=`[[+pattern_template]]`]]\n<\/p>","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-21"}},{"heading":{"value":"[[%romanesco.patterns.usage_title]]","fieldId":"contentblocks-field-23"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-24"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-26"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.included_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":84,"settings":{"pattern_list":"includedChunks,includedSnippets,includedTVs","pattern_name":"[[+pattern_name]]"}}],"col_2":[{"value":"[[%romanesco.patterns.referring_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringChunks,referringSnippets,referringTemplates","pattern_name":"[[+pattern_name]]"}}]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-27"}}],"field":76,"settings":{"layout_type":"tabs","accordion_type":"","tab_type":"regular","padding":"padded"}},{"value":"[[getCrosslinks?\n    $tvName=`contributors_id`\n    $page=`[[*id]]`\n]]","lang":"html","field":13,"settings":{"label":"[[%romanesco.patterns.example_label]]"}},{"value":"[[Rowboat?\n    &table=`modx_site_snippets`\n    &tpl=`displayRawElement`\n    &where=`{\"name\":\"[[+pattern_name]]\"}`\n]]","lang":"php","field":86,"settings":{"label":"[[%romanesco.patterns.code_label]]"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-35"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"<p>[[getElementDescription? &name=`[[+pattern_name]]` &type=`[[+pattern_template]]`]]\n<\/p>","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-36"}},{"heading":{"value":"[[%romanesco.patterns.usage_title]]","fieldId":"contentblocks-field-38"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-39"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-41"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.included_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":84,"settings":{"pattern_list":"includedChunks,includedSnippets,includedTVs","pattern_name":"[[+pattern_name]]"}}],"col_2":[{"value":"[[%romanesco.patterns.referring_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringChunks,referringSnippets,referringTemplates","pattern_name":"[[+pattern_name]]"}}]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-42"}}],"field":76,"settings":{"layout_type":"tabs","accordion_type":"","tab_type":"regular","padding":"padded"}},{"value":"{{EXAMPLE SNIPPET CALL}}","lang":"html","field":13,"settings":{"label":"[[%romanesco.patterns.example_label]]"}},{"value":"[[Rowboat?\n    &table=`modx_site_snippets`\n    &tpl=`displayRawElement`\n    &where=`{\"name\":\"[[+pattern_name]]\"}`\n]]","lang":"php","field":86,"settings":{"label":"[[%romanesco.patterns.code_label]]"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-50"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"<p>[[getElementDescription? &name=`[[+pattern_name]]` &type=`[[+pattern_template]]`]]\n<\/p>","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-51"}},{"heading":{"value":"[[%romanesco.patterns.usage_title]]","fieldId":"contentblocks-field-53"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-54"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-56"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.included_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":84,"settings":{"pattern_list":"includedChunks,includedSnippets,includedTVs","pattern_name":"[[+pattern_name]]"}}],"col_2":[{"value":"[[%romanesco.patterns.referring_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringChunks,referringSnippets,referringTemplates","pattern_name":"[[+pattern_name]]"}}]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-57"}}],"field":76,"settings":{"layout_type":"tabs","accordion_type":"","tab_type":"regular","padding":"padded"}},{"value":"{{EXAMPLE SNIPPET CALL}}","lang":"html","field":13,"settings":{"label":"[[%romanesco.patterns.example_label]]"}},{"value":"[[Rowboat?\n    &table=`modx_site_snippets`\n    &tpl=`displayRawElement`\n    &where=`{\"name\":\"[[+pattern_name]]\"}`\n]]","lang":"php","field":86,"settings":{"label":"[[%romanesco.patterns.code_label]]"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-65"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"<p>[[getElementDescription? &name=`[[+pattern_name]]` &type=`[[+pattern_template]]`]]\n<\/p>","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-66"}},{"heading":{"value":"[[%romanesco.patterns.usage_title]]","fieldId":"contentblocks-field-68"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-69"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-71"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.included_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":84,"settings":{"pattern_list":"includedChunks,includedSnippets,includedTVs","pattern_name":"[[+pattern_name]]"}}],"col_2":[{"value":"[[%romanesco.patterns.referring_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringChunks,referringSnippets,referringTemplates","pattern_name":"[[+pattern_name]]"}}]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-72"}}],"field":76,"settings":{"layout_type":"tabs","accordion_type":"","tab_type":"regular","padding":"padded"}}],"fieldcounts":{"13":5,"86":5,"76":5},"_isContentBlocks":true}}'
+tvs:
+    header_background: '@INHERIT'
+    header_background_img: ''
+    header_cta: '@INHERIT'
+    header_inheritance: '@INHERIT inherit_titles||inherit_background'
+    header_subtitle: '@INHERIT'
+    header_title: '@INHERIT'
+    overview_icon_font: ''
+    overview_icon_svg: ''
+    overview_img_landscape: ''
+    overview_img_pano: ''
+    overview_img_portrait: ''
+    overview_img_priority: landscape
+    overview_img_square: ''
+    overview_img_wide: ''
+    overview_link_text: ''
+    status_assigned_user: ''
+    status_help: ''
+    status_improvements: ''
+    status_indicator: not-done
+    status_notes: ''
+
+-----
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutFormula`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`getResourceLevel` &prefix=`cf_1_212``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutFormula`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`getResourceLevel` &prefix=`cl_1_212``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_1_212`?
+            &preview=`<pre><code class="language-html">&#91;&#91;&#91;&#91;getResourceLevel:eq=&#96;1&#96;:then=&#96;$topLevelElement&#96;:else=&#96;$innerElement&#96;&#93;&#93;&#93;&#93;</code><div class="ui small top right attached label">[[%romanesco.patterns.example_label]]<i class="copy link icon with popup" data-content="[[%romanesco.patterns.copy_tooltip]]"></i></div></pre>`
+            &code=`[[$codeSnippet?
+    &value=`[[Rowboat?
+    &table=`modx_site_snippets`
+    &tpl=`displayRawElement`
+    &where=`{"name":"getResourceLevel"}`
+]]`
+    &lang=`php`
+    &label=`[[%romanesco.patterns.code_label]]`
+]]`
+            &sidebar_width=`sixteen`
+            &pattern_name=`getResourceLevel`
+            &pattern_template=`patternLayoutFormula`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`1`
+            &unique_idx=`212`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutFormula`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`getResourceLevel`
+                    &pattern_status=`green`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`getResourceLevel`
+                    &pattern_template=`patternLayoutFormula`
+                    &pattern_status=`green`
+                    &idx=`1`
+                    &unique_idx=`212`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutFormula`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_1_212`
+        ]]]]
+
+        [[$tabsOuter?
+    &rows=`[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=`<p>[[getElementDescription? &name=`getResourceLevel` &type=`patternLayoutFormula`]]
+</p>`
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.usage_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.included_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`207`
+]]
+
+[[$includedPatternsOuter? 
+	&unique_idx=`208`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`includedChunks,includedSnippets,includedTVs`
+	&pattern_template=`patternLayoutFormula`
+	&pattern_name=`getResourceLevel`
+	]]
+</div>
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`209`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`210`
+	&layout_id=`12`
+	&layout_column=`col_2`
+	&layout_idx=`0`
+	&pattern_list=`referringChunks,referringSnippets,referringTemplates`
+	&pattern_template=`patternLayoutFormula`
+	&pattern_name=`getResourceLevel`
+	]]
+</div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]`
+    &total=`3`
+    &padding=`padded`
+    &accordion_type=``
+    &tab_type=`regular`
+    &unique_idx=`202`
+]]
+    </div>
+</div>
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutFormula`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`getChildCount` &prefix=`cf_2_225``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutFormula`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`getChildCount` &prefix=`cl_2_225``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_2_225`?
+            &preview=`<pre><code class="language-html">&#91;&#91;getChildCount?
+    &amp;parent=&#96;&#91;&#91;+id&#93;&#93;&#96;
+&#93;&#93;</code><div class="ui small top right attached label">[[%romanesco.patterns.example_label]]<i class="copy link icon with popup" data-content="[[%romanesco.patterns.copy_tooltip]]"></i></div></pre>`
+            &code=`[[$codeSnippet?
+    &value=`[[Rowboat?
+    &table=`modx_site_snippets`
+    &tpl=`displayRawElement`
+    &where=`{"name":"getChildCount"}`
+]]`
+    &lang=`php`
+    &label=`[[%romanesco.patterns.code_label]]`
+]]`
+            &sidebar_width=`six`
+            &pattern_name=`getChildCount`
+            &pattern_template=`patternLayoutFormula`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`2`
+            &unique_idx=`225`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutFormula`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`getChildCount`
+                    &pattern_status=`green`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`getChildCount`
+                    &pattern_template=`patternLayoutFormula`
+                    &pattern_status=`green`
+                    &idx=`2`
+                    &unique_idx=`225`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutFormula`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_2_225`
+        ]]]]
+
+        [[$tabsOuter?
+    &rows=`[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=`<p>[[getElementDescription? &name=`getChildCount` &type=`patternLayoutFormula`]]
+</p>`
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.usage_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.included_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`220`
+]]
+
+[[$includedPatternsOuter? 
+	&unique_idx=`221`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`includedChunks,includedSnippets,includedTVs`
+	&pattern_template=`patternLayoutFormula`
+	&pattern_name=`getChildCount`
+	]]
+</div>
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`222`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`223`
+	&layout_id=`12`
+	&layout_column=`col_2`
+	&layout_idx=`0`
+	&pattern_list=`referringChunks,referringSnippets,referringTemplates`
+	&pattern_template=`patternLayoutFormula`
+	&pattern_name=`getChildCount`
+	]]
+</div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]`
+    &total=`3`
+    &padding=`padded`
+    &accordion_type=``
+    &tab_type=`regular`
+    &unique_idx=`215`
+]]
+    </div>
+</div>
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutFormula`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`getCrosslinks` &prefix=`cf_3_238``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutFormula`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`getCrosslinks` &prefix=`cl_3_238``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_3_238`?
+            &preview=`<pre><code class="language-html">&#91;&#91;getCrosslinks?
+    $tvName=&#96;contributors_id&#96;
+    $page=&#96;&#91;&#91;*id&#93;&#93;&#96;
+&#93;&#93;</code><div class="ui small top right attached label">[[%romanesco.patterns.example_label]]<i class="copy link icon with popup" data-content="[[%romanesco.patterns.copy_tooltip]]"></i></div></pre>`
+            &code=`[[$codeSnippet?
+    &value=`[[Rowboat?
+    &table=`modx_site_snippets`
+    &tpl=`displayRawElement`
+    &where=`{"name":"getCrosslinks"}`
+]]`
+    &lang=`php`
+    &label=`[[%romanesco.patterns.code_label]]`
+]]`
+            &sidebar_width=`six`
+            &pattern_name=`getCrosslinks`
+            &pattern_template=`patternLayoutFormula`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`3`
+            &unique_idx=`238`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutFormula`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`getCrosslinks`
+                    &pattern_status=`yellow`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`getCrosslinks`
+                    &pattern_template=`patternLayoutFormula`
+                    &pattern_status=`yellow`
+                    &idx=`3`
+                    &unique_idx=`238`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutFormula`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_3_238`
+        ]]]]
+
+        [[$tabsOuter?
+    &rows=`[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=`<p>[[getElementDescription? &name=`getCrosslinks` &type=`patternLayoutFormula`]]
+</p>`
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.usage_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.included_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`233`
+]]
+
+[[$includedPatternsOuter? 
+	&unique_idx=`234`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`includedChunks,includedSnippets,includedTVs`
+	&pattern_template=`patternLayoutFormula`
+	&pattern_name=`getCrosslinks`
+	]]
+</div>
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`235`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`236`
+	&layout_id=`12`
+	&layout_column=`col_2`
+	&layout_idx=`0`
+	&pattern_list=`referringChunks,referringSnippets,referringTemplates`
+	&pattern_template=`patternLayoutFormula`
+	&pattern_name=`getCrosslinks`
+	]]
+</div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]`
+    &total=`3`
+    &padding=`padded`
+    &accordion_type=``
+    &tab_type=`regular`
+    &unique_idx=`228`
+]]
+    </div>
+</div>
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutFormula`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`resourceTVInputOptions` &prefix=`cf_4_251``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutFormula`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`resourceTVInputOptions` &prefix=`cl_4_251``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_4_251`?
+            &preview=`<pre><code class="language-html">{{EXAMPLE SNIPPET CALL}}</code><div class="ui small top right attached label">[[%romanesco.patterns.example_label]]<i class="copy link icon with popup" data-content="[[%romanesco.patterns.copy_tooltip]]"></i></div></pre>`
+            &code=`[[$codeSnippet?
+    &value=`[[Rowboat?
+    &table=`modx_site_snippets`
+    &tpl=`displayRawElement`
+    &where=`{"name":"resourceTVInputOptions"}`
+]]`
+    &lang=`php`
+    &label=`[[%romanesco.patterns.code_label]]`
+]]`
+            &sidebar_width=`six`
+            &pattern_name=`resourceTVInputOptions`
+            &pattern_template=`patternLayoutFormula`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`4`
+            &unique_idx=`251`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutFormula`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`resourceTVInputOptions`
+                    &pattern_status=`brown`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`resourceTVInputOptions`
+                    &pattern_template=`patternLayoutFormula`
+                    &pattern_status=`brown`
+                    &idx=`4`
+                    &unique_idx=`251`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutFormula`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_4_251`
+        ]]]]
+
+        [[$tabsOuter?
+    &rows=`[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=`<p>[[getElementDescription? &name=`resourceTVInputOptions` &type=`patternLayoutFormula`]]
+</p>`
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.usage_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.included_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`246`
+]]
+
+[[$includedPatternsOuter? 
+	&unique_idx=`247`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`includedChunks,includedSnippets,includedTVs`
+	&pattern_template=`patternLayoutFormula`
+	&pattern_name=`resourceTVInputOptions`
+	]]
+</div>
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`248`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`249`
+	&layout_id=`12`
+	&layout_column=`col_2`
+	&layout_idx=`0`
+	&pattern_list=`referringChunks,referringSnippets,referringTemplates`
+	&pattern_template=`patternLayoutFormula`
+	&pattern_name=`resourceTVInputOptions`
+	]]
+</div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]`
+    &total=`3`
+    &padding=`padded`
+    &accordion_type=``
+    &tab_type=`regular`
+    &unique_idx=`241`
+]]
+    </div>
+</div>
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutFormula`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`resourceMediaPath` &prefix=`cf_5_264``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutFormula`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`resourceMediaPath` &prefix=`cl_5_264``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_5_264`?
+            &preview=`<pre><code class="language-html">{{EXAMPLE SNIPPET CALL}}</code><div class="ui small top right attached label">[[%romanesco.patterns.example_label]]<i class="copy link icon with popup" data-content="[[%romanesco.patterns.copy_tooltip]]"></i></div></pre>`
+            &code=`[[$codeSnippet?
+    &value=`[[Rowboat?
+    &table=`modx_site_snippets`
+    &tpl=`displayRawElement`
+    &where=`{"name":"resourceMediaPath"}`
+]]`
+    &lang=`php`
+    &label=`[[%romanesco.patterns.code_label]]`
+]]`
+            &sidebar_width=`six`
+            &pattern_name=`resourceMediaPath`
+            &pattern_template=`patternLayoutFormula`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`5`
+            &unique_idx=`264`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutFormula`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`resourceMediaPath`
+                    &pattern_status=`blue`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`resourceMediaPath`
+                    &pattern_template=`patternLayoutFormula`
+                    &pattern_status=`blue`
+                    &idx=`5`
+                    &unique_idx=`264`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutFormula`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_5_264`
+        ]]]]
+
+        [[$tabsOuter?
+    &rows=`[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=`<p>[[getElementDescription? &name=`resourceMediaPath` &type=`patternLayoutFormula`]]
+</p>`
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.usage_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.included_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`259`
+]]
+
+[[$includedPatternsOuter? 
+	&unique_idx=`260`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`includedChunks,includedSnippets,includedTVs`
+	&pattern_template=`patternLayoutFormula`
+	&pattern_name=`resourceMediaPath`
+	]]
+</div>
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`261`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`262`
+	&layout_id=`12`
+	&layout_column=`col_2`
+	&layout_idx=`0`
+	&pattern_list=`referringChunks,referringSnippets,referringTemplates`
+	&pattern_template=`patternLayoutFormula`
+	&pattern_name=`resourceMediaPath`
+	]]
+</div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]`
+    &total=`3`
+    &padding=`padded`
+    &accordion_type=``
+    &tab_type=`regular`
+    &unique_idx=`254`
+]]
+    </div>
+</div>

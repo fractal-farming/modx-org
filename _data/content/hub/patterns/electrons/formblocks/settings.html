@@ -1,0 +1,1267 @@
+id: 108
+pagetitle: '00 - FormBlocks - System Settings'
+longtitle: 'MODX settings to control global functionality'
+alias: settings
+published: 1
+parent: 38
+introtext: ''
+template: 2
+menuindex: 1
+createdby: 1
+createdon: 1500991102
+publishedon: 1500991102
+publishedby: 1
+menutitle: 'System Settings'
+context_key: hub
+uri: patterns/electrons/formblocks/settings
+properties: '{"contentblocks":{"content":"[{\"layout\":17,\"content\":{\"preview\":[],\"code\":[],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-3\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"<p>Specify which resource contains all the forms built with FormBlocks.<\/p>\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-4\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.specifications_title]]\",\"fieldId\":\"contentblocks-field-6\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"{\\n    \\\"key\\\": \\\"container_id\\\",\\n    \\\"namespace\\\": \\\"formblocks\\\",\\n    \\\"type\\\": \\\"textfield\\\",\\n    \\\"area\\\": \\\"FormBlocks - Pages\\\"\\n}\",\"lang\":\"json\",\"field\":83,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-7\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-9\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.referring_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringSnippets,referringTemplates\",\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-10\"}}],\"field\":76,\"settings\":{\"layout_type\":\"accordion\",\"accordion_type\":\"fluid styled\",\"padding\":\"padded\",\"tab_type\":\"regular\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"five\",\"alignment\":\"\",\"pattern_name\":\"formblocks.container_id\",\"pattern_template\":\"patternLayoutElectronSystemSetting\"},\"parent\":0,\"title\":\"\"},{\"layout\":17,\"content\":{\"preview\":[],\"code\":[],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-14\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"<p>Enable or disable the option to save each form submission in the database. The saved forms can be accessed from the top menu through Extras &gt; FormIt.<\/p>\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-15\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.specifications_title]]\",\"fieldId\":\"contentblocks-field-17\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"{\\n    \\\"key\\\": \\\"save_form\\\",\\n    \\\"namespace\\\": \\\"formblocks\\\",\\n    \\\"type\\\": \\\"combo-boolean\\\",\\n    \\\"area\\\": \\\"FormBlocks - Settings\\\",\\n    \\\"value\\\": \\\"1\\\"\\n}\",\"lang\":\"json\",\"field\":83,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-18\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-20\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.referring_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringChunks,referringTemplates\",\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-21\"}}],\"field\":76,\"settings\":{\"layout_type\":\"accordion\",\"accordion_type\":\"fluid styled\",\"padding\":\"padded\",\"tab_type\":\"regular\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"five\",\"alignment\":\"\",\"pattern_name\":\"formblocks.save_form\",\"pattern_template\":\"patternLayoutElectronSystemSetting\"},\"parent\":0,\"title\":\"\"},{\"layout\":1,\"content\":{\"main\":[{\"value\":\"<p>Below you will find the settings for referencing the ContentBlocks fields containing the various form inputs.\\n<\/p><p><strong>Please note that you have to fill in the ID of the ContentBlocks field here, not their chunk ID!<\/strong>\\n<\/p><p><em>Yes, I''ve been there.. A little too long ;)<br><\/em>\\n<\/p><p>Also note that these settings are referenced by the  fbEmailRow chunks that generate the rows inside the email template. These chunks are not part of the pattern library, because the CB field ID is part of their chunk name but that ID can differ per installation, if you install through the RomanescoPatterns GPM package. You don''t have to worry about this if you installed the full Romanesco MODX installation though.<br><em><\/em>\\n<\/p>\",\"field\":79,\"settings\":{\"heading\":\"Good to know\",\"message_type\":\"info\"}}]},\"settings\":[],\"parent\":0,\"title\":\"\"},{\"layout\":17,\"content\":{\"preview\":[],\"code\":[],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-26\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-27\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.specifications_title]]\",\"fieldId\":\"contentblocks-field-29\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"{\\n    \\\"key\\\": \\\"cb_input_textfield_id\\\",\\n    \\\"namespace\\\": \\\"formblocks\\\",\\n    \\\"type\\\": \\\"textfield\\\",\\n    \\\"area\\\": \\\"FormBlocks - CB fields\\\"\\n}\",\"lang\":\"json\",\"field\":83,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-30\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-32\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.referring_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringChunks,referringTemplates\",\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-33\"}}],\"field\":76,\"settings\":{\"layout_type\":\"accordion\",\"accordion_type\":\"fluid styled\",\"padding\":\"padded\",\"tab_type\":\"regular\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"five\",\"alignment\":\"\",\"pattern_name\":\"formblocks.cb_input_textfield_id\",\"pattern_template\":\"patternLayoutElectronSystemSetting\"},\"parent\":0,\"title\":\"\"},{\"layout\":17,\"content\":{\"preview\":[],\"code\":[],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-37\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-38\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.specifications_title]]\",\"fieldId\":\"contentblocks-field-40\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"{\\n    \\\"key\\\": \\\"cb_input_textarea_id\\\",\\n    \\\"namespace\\\": \\\"formblocks\\\",\\n    \\\"type\\\": \\\"textfield\\\",\\n    \\\"area\\\": \\\"FormBlocks - CB fields\\\"\\n}\",\"lang\":\"json\",\"field\":83,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-41\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-43\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.referring_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringChunks,referringTemplates\",\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-44\"}}],\"field\":76,\"settings\":{\"layout_type\":\"accordion\",\"accordion_type\":\"fluid styled\",\"padding\":\"padded\",\"tab_type\":\"regular\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"five\",\"alignment\":\"\",\"pattern_name\":\"formblocks.cb_input_textarea_id\",\"pattern_template\":\"patternLayoutElectronSystemSetting\"},\"parent\":0,\"title\":\"\"},{\"layout\":17,\"content\":{\"preview\":[],\"code\":[],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-48\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-49\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.specifications_title]]\",\"fieldId\":\"contentblocks-field-51\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"{\\n    \\\"key\\\": \\\"cb_input_email_id\\\",\\n    \\\"namespace\\\": \\\"formblocks\\\",\\n    \\\"type\\\": \\\"textfield\\\",\\n    \\\"area\\\": \\\"FormBlocks - CB fields\\\"\\n}\",\"lang\":\"json\",\"field\":83,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-52\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-54\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.referring_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringChunks,referringTemplates\",\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-55\"}}],\"field\":76,\"settings\":{\"layout_type\":\"accordion\",\"accordion_type\":\"fluid styled\",\"padding\":\"padded\",\"tab_type\":\"regular\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"five\",\"alignment\":\"\",\"pattern_name\":\"formblocks.cb_input_email_id\",\"pattern_template\":\"patternLayoutElectronSystemSetting\"},\"parent\":0,\"title\":\"\"},{\"layout\":17,\"content\":{\"preview\":[],\"code\":[],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-59\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-60\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.specifications_title]]\",\"fieldId\":\"contentblocks-field-62\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"{\\n    \\\"key\\\": \\\"cb_select_option_id\\\",\\n    \\\"namespace\\\": \\\"formblocks\\\",\\n    \\\"type\\\": \\\"textfield\\\",\\n    \\\"area\\\": \\\"FormBlocks - CB fields\\\"\\n}\",\"lang\":\"json\",\"field\":83,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-63\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-65\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.referring_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringChunks,referringTemplates\",\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-66\"}}],\"field\":76,\"settings\":{\"layout_type\":\"accordion\",\"accordion_type\":\"fluid styled\",\"padding\":\"padded\",\"tab_type\":\"regular\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"five\",\"alignment\":\"\",\"pattern_name\":\"formblocks.cb_select_option_id\",\"pattern_template\":\"patternLayoutElectronSystemSetting\"},\"parent\":0,\"title\":\"\"},{\"layout\":17,\"content\":{\"preview\":[],\"code\":[],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-70\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-71\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.specifications_title]]\",\"fieldId\":\"contentblocks-field-73\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"{\\n    \\\"key\\\": \\\"cb_select_option_collapse_id\\\",\\n    \\\"namespace\\\": \\\"formblocks\\\",\\n    \\\"type\\\": \\\"textfield\\\",\\n    \\\"area\\\": \\\"FormBlocks - CB fields\\\"\\n}\",\"lang\":\"json\",\"field\":83,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-74\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-76\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.referring_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringChunks,referringTemplates\",\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-77\"}}],\"field\":76,\"settings\":{\"layout_type\":\"accordion\",\"accordion_type\":\"fluid styled\",\"padding\":\"padded\",\"tab_type\":\"regular\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"five\",\"alignment\":\"\",\"pattern_name\":\"formblocks.cb_select_option_collapse_id\",\"pattern_template\":\"patternLayoutElectronSystemSetting\"},\"parent\":0,\"title\":\"\"},{\"layout\":17,\"content\":{\"preview\":[],\"code\":[],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-81\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-82\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.specifications_title]]\",\"fieldId\":\"contentblocks-field-84\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"{\\n    \\\"key\\\": \\\"cb_select_dropdown_id\\\",\\n    \\\"namespace\\\": \\\"formblocks\\\",\\n    \\\"type\\\": \\\"textfield\\\",\\n    \\\"area\\\": \\\"FormBlocks - CB fields\\\"\\n}\",\"lang\":\"json\",\"field\":83,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-85\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-87\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.referring_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringChunks,referringTemplates\",\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-88\"}}],\"field\":76,\"settings\":{\"layout_type\":\"accordion\",\"accordion_type\":\"fluid styled\",\"padding\":\"padded\",\"tab_type\":\"regular\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"five\",\"alignment\":\"\",\"pattern_name\":\"formblocks.cb_select_dropdown_id\",\"pattern_template\":\"patternLayoutElectronSystemSetting\"},\"parent\":0,\"title\":\"\"},{\"layout\":17,\"content\":{\"preview\":[],\"code\":[],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-92\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-93\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.specifications_title]]\",\"fieldId\":\"contentblocks-field-95\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"{\\n    \\\"key\\\": \\\"cb_select_dropdown_auto_id\\\",\\n    \\\"namespace\\\": \\\"formblocks\\\",\\n    \\\"type\\\": \\\"textfield\\\",\\n    \\\"area\\\": \\\"FormBlocks - CB fields\\\"\\n}\",\"lang\":\"json\",\"field\":83,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-96\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-98\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.referring_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringChunks,referringTemplates\",\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-99\"}}],\"field\":76,\"settings\":{\"layout_type\":\"accordion\",\"accordion_type\":\"fluid styled\",\"padding\":\"padded\",\"tab_type\":\"regular\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"five\",\"alignment\":\"\",\"pattern_name\":\"formblocks.cb_select_dropdown_auto_id\",\"pattern_template\":\"patternLayoutElectronSystemSetting\"},\"parent\":0,\"title\":\"\"},{\"layout\":17,\"content\":{\"preview\":[],\"code\":[],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-103\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-104\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.specifications_title]]\",\"fieldId\":\"contentblocks-field-106\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"{\\n    \\\"key\\\": \\\"cb_accept_terms_id\\\",\\n    \\\"namespace\\\": \\\"formblocks\\\",\\n    \\\"type\\\": \\\"textfield\\\",\\n    \\\"area\\\": \\\"FormBlocks - CB fields\\\"\\n}\",\"lang\":\"json\",\"field\":83,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-107\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-109\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.referring_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringChunks,referringTemplates\",\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-110\"}}],\"field\":76,\"settings\":{\"layout_type\":\"accordion\",\"accordion_type\":\"fluid styled\",\"padding\":\"padded\",\"tab_type\":\"regular\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"five\",\"alignment\":\"\",\"pattern_name\":\"formblocks.cb_accept_terms_id\",\"pattern_template\":\"patternLayoutElectronSystemSetting\"},\"parent\":0,\"title\":\"\"}]","linear":[{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-3"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"<p>Specify which resource contains all the forms built with FormBlocks.<\/p>","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-4"}},{"heading":{"value":"[[%romanesco.patterns.specifications_title]]","fieldId":"contentblocks-field-6"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"{\n    \"key\": \"container_id\",\n    \"namespace\": \"formblocks\",\n    \"type\": \"textfield\",\n    \"area\": \"FormBlocks - Pages\"\n}","lang":"json","field":83,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-7"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-9"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.referring_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringSnippets,referringTemplates","pattern_name":"[[+pattern_name]]"}}],"col_2":[]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-10"}}],"field":76,"settings":{"layout_type":"accordion","accordion_type":"fluid styled","padding":"padded","tab_type":"regular"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-14"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"<p>Enable or disable the option to save each form submission in the database. The saved forms can be accessed from the top menu through Extras &gt; FormIt.<\/p>","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-15"}},{"heading":{"value":"[[%romanesco.patterns.specifications_title]]","fieldId":"contentblocks-field-17"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"{\n    \"key\": \"save_form\",\n    \"namespace\": \"formblocks\",\n    \"type\": \"combo-boolean\",\n    \"area\": \"FormBlocks - Settings\",\n    \"value\": \"1\"\n}","lang":"json","field":83,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-18"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-20"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.referring_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringChunks,referringTemplates","pattern_name":"[[+pattern_name]]"}}],"col_2":[]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-21"}}],"field":76,"settings":{"layout_type":"accordion","accordion_type":"fluid styled","padding":"padded","tab_type":"regular"}},{"value":"<p>Below you will find the settings for referencing the ContentBlocks fields containing the various form inputs.\n<\/p><p><strong>Please note that you have to fill in the ID of the ContentBlocks field here, not their chunk ID!<\/strong>\n<\/p><p><em>Yes, I''ve been there.. A little too long ;)<br><\/em>\n<\/p><p>Also note that these settings are referenced by the  fbEmailRow chunks that generate the rows inside the email template. These chunks are not part of the pattern library, because the CB field ID is part of their chunk name but that ID can differ per installation, if you install through the RomanescoPatterns GPM package. You don''t have to worry about this if you installed the full Romanesco MODX installation though.<br><em><\/em>\n<\/p>","field":79,"settings":{"heading":"Good to know","message_type":"info"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-26"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-27"}},{"heading":{"value":"[[%romanesco.patterns.specifications_title]]","fieldId":"contentblocks-field-29"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"{\n    \"key\": \"cb_input_textfield_id\",\n    \"namespace\": \"formblocks\",\n    \"type\": \"textfield\",\n    \"area\": \"FormBlocks - CB fields\"\n}","lang":"json","field":83,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-30"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-32"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.referring_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringChunks,referringTemplates","pattern_name":"[[+pattern_name]]"}}],"col_2":[]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-33"}}],"field":76,"settings":{"layout_type":"accordion","accordion_type":"fluid styled","padding":"padded","tab_type":"regular"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-37"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-38"}},{"heading":{"value":"[[%romanesco.patterns.specifications_title]]","fieldId":"contentblocks-field-40"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"{\n    \"key\": \"cb_input_textarea_id\",\n    \"namespace\": \"formblocks\",\n    \"type\": \"textfield\",\n    \"area\": \"FormBlocks - CB fields\"\n}","lang":"json","field":83,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-41"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-43"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.referring_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringChunks,referringTemplates","pattern_name":"[[+pattern_name]]"}}],"col_2":[]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-44"}}],"field":76,"settings":{"layout_type":"accordion","accordion_type":"fluid styled","padding":"padded","tab_type":"regular"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-48"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-49"}},{"heading":{"value":"[[%romanesco.patterns.specifications_title]]","fieldId":"contentblocks-field-51"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"{\n    \"key\": \"cb_input_email_id\",\n    \"namespace\": \"formblocks\",\n    \"type\": \"textfield\",\n    \"area\": \"FormBlocks - CB fields\"\n}","lang":"json","field":83,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-52"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-54"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.referring_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringChunks,referringTemplates","pattern_name":"[[+pattern_name]]"}}],"col_2":[]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-55"}}],"field":76,"settings":{"layout_type":"accordion","accordion_type":"fluid styled","padding":"padded","tab_type":"regular"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-59"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-60"}},{"heading":{"value":"[[%romanesco.patterns.specifications_title]]","fieldId":"contentblocks-field-62"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"{\n    \"key\": \"cb_select_option_id\",\n    \"namespace\": \"formblocks\",\n    \"type\": \"textfield\",\n    \"area\": \"FormBlocks - CB fields\"\n}","lang":"json","field":83,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-63"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-65"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.referring_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringChunks,referringTemplates","pattern_name":"[[+pattern_name]]"}}],"col_2":[]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-66"}}],"field":76,"settings":{"layout_type":"accordion","accordion_type":"fluid styled","padding":"padded","tab_type":"regular"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-70"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-71"}},{"heading":{"value":"[[%romanesco.patterns.specifications_title]]","fieldId":"contentblocks-field-73"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"{\n    \"key\": \"cb_select_option_collapse_id\",\n    \"namespace\": \"formblocks\",\n    \"type\": \"textfield\",\n    \"area\": \"FormBlocks - CB fields\"\n}","lang":"json","field":83,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-74"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-76"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.referring_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringChunks,referringTemplates","pattern_name":"[[+pattern_name]]"}}],"col_2":[]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-77"}}],"field":76,"settings":{"layout_type":"accordion","accordion_type":"fluid styled","padding":"padded","tab_type":"regular"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-81"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-82"}},{"heading":{"value":"[[%romanesco.patterns.specifications_title]]","fieldId":"contentblocks-field-84"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"{\n    \"key\": \"cb_select_dropdown_id\",\n    \"namespace\": \"formblocks\",\n    \"type\": \"textfield\",\n    \"area\": \"FormBlocks - CB fields\"\n}","lang":"json","field":83,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-85"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-87"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.referring_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringChunks,referringTemplates","pattern_name":"[[+pattern_name]]"}}],"col_2":[]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-88"}}],"field":76,"settings":{"layout_type":"accordion","accordion_type":"fluid styled","padding":"padded","tab_type":"regular"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-92"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-93"}},{"heading":{"value":"[[%romanesco.patterns.specifications_title]]","fieldId":"contentblocks-field-95"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"{\n    \"key\": \"cb_select_dropdown_auto_id\",\n    \"namespace\": \"formblocks\",\n    \"type\": \"textfield\",\n    \"area\": \"FormBlocks - CB fields\"\n}","lang":"json","field":83,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-96"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-98"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.referring_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringChunks,referringTemplates","pattern_name":"[[+pattern_name]]"}}],"col_2":[]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-99"}}],"field":76,"settings":{"layout_type":"accordion","accordion_type":"fluid styled","padding":"padded","tab_type":"regular"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-103"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-104"}},{"heading":{"value":"[[%romanesco.patterns.specifications_title]]","fieldId":"contentblocks-field-106"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"{\n    \"key\": \"cb_accept_terms_id\",\n    \"namespace\": \"formblocks\",\n    \"type\": \"textfield\",\n    \"area\": \"FormBlocks - CB fields\"\n}","lang":"json","field":83,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-107"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-109"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.referring_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringChunks,referringTemplates","pattern_name":"[[+pattern_name]]"}}],"col_2":[]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-110"}}],"field":76,"settings":{"layout_type":"accordion","accordion_type":"fluid styled","padding":"padded","tab_type":"regular"}}],"fieldcounts":{"76":10,"79":1},"_isContentBlocks":true}}'
+tvs:
+    header_background: '@INHERIT'
+    header_background_img: ''
+    header_cta: '@INHERIT'
+    header_inheritance: '@INHERIT inherit_titles||inherit_background'
+    header_subtitle: '@INHERIT'
+    header_title: '@INHERIT'
+    overview_icon_font: ''
+    overview_icon_svg: ''
+    overview_img_landscape: ''
+    overview_img_pano: ''
+    overview_img_portrait: ''
+    overview_img_priority: landscape
+    overview_img_square: ''
+    overview_img_wide: ''
+    overview_link_text: ''
+    status_assigned_user: ''
+    status_help: ''
+    status_improvements: ''
+    status_indicator: not-done
+    status_notes: ''
+
+-----
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`formblocks.container_id` &prefix=`cf_1_4436``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`formblocks.container_id` &prefix=`cl_1_4436``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_1_4436`?
+            &preview=``
+            &code=``
+            &sidebar_width=`five`
+            &pattern_name=`formblocks.container_id`
+            &pattern_template=`patternLayoutElectronSystemSetting`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`1`
+            &unique_idx=`4436`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`formblocks.container_id`
+                    &pattern_status=`green`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`formblocks.container_id`
+                    &pattern_template=`patternLayoutElectronSystemSetting`
+                    &pattern_status=`green`
+                    &idx=`1`
+                    &unique_idx=`4436`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_1_4436`
+        ]]]]
+
+        [[$accordionOuter?
+    &rows=`[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=`<p>Specify which resource contains all the forms built with FormBlocks.</p>`
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.specifications_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[jsonToHTML? &json=`{
+    "key": "container_id",
+    "namespace": "formblocks",
+    "type": "textfield",
+    "area": "FormBlocks - Pages"
+}`]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`4433`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`4434`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`referringSnippets,referringTemplates`
+	&pattern_template=`patternLayoutElectronSystemSetting`
+	&pattern_name=`formblocks.container_id`
+	]]
+</div>
+        <div class="column"></div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]`
+    &total=`3`
+    &padding=`padded`
+    &accordion_type=`fluid styled`
+    &tab_type=`regular`
+    &unique_idx=`4428`
+]]
+    </div>
+</div>
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`formblocks.save_form` &prefix=`cf_2_4445``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`formblocks.save_form` &prefix=`cl_2_4445``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_2_4445`?
+            &preview=``
+            &code=``
+            &sidebar_width=`five`
+            &pattern_name=`formblocks.save_form`
+            &pattern_template=`patternLayoutElectronSystemSetting`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`2`
+            &unique_idx=`4445`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`formblocks.save_form`
+                    &pattern_status=`green`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`formblocks.save_form`
+                    &pattern_template=`patternLayoutElectronSystemSetting`
+                    &pattern_status=`green`
+                    &idx=`2`
+                    &unique_idx=`4445`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_2_4445`
+        ]]]]
+
+        [[$accordionOuter?
+    &rows=`[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=`<p>Enable or disable the option to save each form submission in the database. The saved forms can be accessed from the top menu through Extras &gt; FormIt.</p>`
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.specifications_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[jsonToHTML? &json=`{
+    "key": "save_form",
+    "namespace": "formblocks",
+    "type": "combo-boolean",
+    "area": "FormBlocks - Settings",
+    "value": "1"
+}`]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`4442`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`4443`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`referringChunks,referringTemplates`
+	&pattern_template=`patternLayoutElectronSystemSetting`
+	&pattern_name=`formblocks.save_form`
+	]]
+</div>
+        <div class="column"></div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]`
+    &total=`3`
+    &padding=`padded`
+    &accordion_type=`fluid styled`
+    &tab_type=`regular`
+    &unique_idx=`4437`
+]]
+    </div>
+</div>
+
+<div class="ui vertical stripe segment white">
+    <div class="ui   container">
+        [[$richTextMessage?
+    &heading=`Good to know`
+    &content=`<p>Below you will find the settings for referencing the ContentBlocks fields containing the various form inputs.
+</p><p><strong>Please note that you have to fill in the ID of the ContentBlocks field here, not their chunk ID!</strong>
+</p><p><em>Yes, I've been there.. A little too long ;)<br></em>
+</p><p>Also note that these settings are referenced by the  fbEmailRow chunks that generate the rows inside the email template. These chunks are not part of the pattern library, because the CB field ID is part of their chunk name but that ID can differ per installation, if you install through the RomanescoPatterns GPM package. You don't have to worry about this if you installed the full Romanesco MODX installation though.<br><em></em>
+</p>`
+    &message_type=`info`
+	&size=``
+	&close=`0`
+]]
+    </div>
+</div>
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`formblocks.cb_input_textfield_id` &prefix=`cf_4_4456``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`formblocks.cb_input_textfield_id` &prefix=`cl_4_4456``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_4_4456`?
+            &preview=``
+            &code=``
+            &sidebar_width=`five`
+            &pattern_name=`formblocks.cb_input_textfield_id`
+            &pattern_template=`patternLayoutElectronSystemSetting`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`4`
+            &unique_idx=`4456`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`formblocks.cb_input_textfield_id`
+                    &pattern_status=`green`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`formblocks.cb_input_textfield_id`
+                    &pattern_template=`patternLayoutElectronSystemSetting`
+                    &pattern_status=`green`
+                    &idx=`4`
+                    &unique_idx=`4456`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_4_4456`
+        ]]]]
+
+        [[$accordionOuter?
+    &rows=`[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.specifications_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[jsonToHTML? &json=`{
+    "key": "cb_input_textfield_id",
+    "namespace": "formblocks",
+    "type": "textfield",
+    "area": "FormBlocks - CB fields"
+}`]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`4453`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`4454`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`referringChunks,referringTemplates`
+	&pattern_template=`patternLayoutElectronSystemSetting`
+	&pattern_name=`formblocks.cb_input_textfield_id`
+	]]
+</div>
+        <div class="column"></div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]`
+    &total=`3`
+    &padding=`padded`
+    &accordion_type=`fluid styled`
+    &tab_type=`regular`
+    &unique_idx=`4448`
+]]
+    </div>
+</div>
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`formblocks.cb_input_textarea_id` &prefix=`cf_5_4465``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`formblocks.cb_input_textarea_id` &prefix=`cl_5_4465``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_5_4465`?
+            &preview=``
+            &code=``
+            &sidebar_width=`five`
+            &pattern_name=`formblocks.cb_input_textarea_id`
+            &pattern_template=`patternLayoutElectronSystemSetting`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`5`
+            &unique_idx=`4465`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`formblocks.cb_input_textarea_id`
+                    &pattern_status=`green`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`formblocks.cb_input_textarea_id`
+                    &pattern_template=`patternLayoutElectronSystemSetting`
+                    &pattern_status=`green`
+                    &idx=`5`
+                    &unique_idx=`4465`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_5_4465`
+        ]]]]
+
+        [[$accordionOuter?
+    &rows=`[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.specifications_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[jsonToHTML? &json=`{
+    "key": "cb_input_textarea_id",
+    "namespace": "formblocks",
+    "type": "textfield",
+    "area": "FormBlocks - CB fields"
+}`]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`4462`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`4463`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`referringChunks,referringTemplates`
+	&pattern_template=`patternLayoutElectronSystemSetting`
+	&pattern_name=`formblocks.cb_input_textarea_id`
+	]]
+</div>
+        <div class="column"></div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]`
+    &total=`3`
+    &padding=`padded`
+    &accordion_type=`fluid styled`
+    &tab_type=`regular`
+    &unique_idx=`4457`
+]]
+    </div>
+</div>
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`formblocks.cb_input_email_id` &prefix=`cf_6_4474``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`formblocks.cb_input_email_id` &prefix=`cl_6_4474``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_6_4474`?
+            &preview=``
+            &code=``
+            &sidebar_width=`five`
+            &pattern_name=`formblocks.cb_input_email_id`
+            &pattern_template=`patternLayoutElectronSystemSetting`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`6`
+            &unique_idx=`4474`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`formblocks.cb_input_email_id`
+                    &pattern_status=`green`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`formblocks.cb_input_email_id`
+                    &pattern_template=`patternLayoutElectronSystemSetting`
+                    &pattern_status=`green`
+                    &idx=`6`
+                    &unique_idx=`4474`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_6_4474`
+        ]]]]
+
+        [[$accordionOuter?
+    &rows=`[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.specifications_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[jsonToHTML? &json=`{
+    "key": "cb_input_email_id",
+    "namespace": "formblocks",
+    "type": "textfield",
+    "area": "FormBlocks - CB fields"
+}`]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`4471`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`4472`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`referringChunks,referringTemplates`
+	&pattern_template=`patternLayoutElectronSystemSetting`
+	&pattern_name=`formblocks.cb_input_email_id`
+	]]
+</div>
+        <div class="column"></div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]`
+    &total=`3`
+    &padding=`padded`
+    &accordion_type=`fluid styled`
+    &tab_type=`regular`
+    &unique_idx=`4466`
+]]
+    </div>
+</div>
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`formblocks.cb_select_option_id` &prefix=`cf_7_4483``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`formblocks.cb_select_option_id` &prefix=`cl_7_4483``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_7_4483`?
+            &preview=``
+            &code=``
+            &sidebar_width=`five`
+            &pattern_name=`formblocks.cb_select_option_id`
+            &pattern_template=`patternLayoutElectronSystemSetting`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`7`
+            &unique_idx=`4483`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`formblocks.cb_select_option_id`
+                    &pattern_status=`green`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`formblocks.cb_select_option_id`
+                    &pattern_template=`patternLayoutElectronSystemSetting`
+                    &pattern_status=`green`
+                    &idx=`7`
+                    &unique_idx=`4483`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_7_4483`
+        ]]]]
+
+        [[$accordionOuter?
+    &rows=`[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.specifications_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[jsonToHTML? &json=`{
+    "key": "cb_select_option_id",
+    "namespace": "formblocks",
+    "type": "textfield",
+    "area": "FormBlocks - CB fields"
+}`]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`4480`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`4481`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`referringChunks,referringTemplates`
+	&pattern_template=`patternLayoutElectronSystemSetting`
+	&pattern_name=`formblocks.cb_select_option_id`
+	]]
+</div>
+        <div class="column"></div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]`
+    &total=`3`
+    &padding=`padded`
+    &accordion_type=`fluid styled`
+    &tab_type=`regular`
+    &unique_idx=`4475`
+]]
+    </div>
+</div>
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`formblocks.cb_select_option_collapse_id` &prefix=`cf_8_4492``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`formblocks.cb_select_option_collapse_id` &prefix=`cl_8_4492``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_8_4492`?
+            &preview=``
+            &code=``
+            &sidebar_width=`five`
+            &pattern_name=`formblocks.cb_select_option_collapse_id`
+            &pattern_template=`patternLayoutElectronSystemSetting`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`8`
+            &unique_idx=`4492`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`formblocks.cb_select_option_collapse_id`
+                    &pattern_status=`green`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`formblocks.cb_select_option_collapse_id`
+                    &pattern_template=`patternLayoutElectronSystemSetting`
+                    &pattern_status=`green`
+                    &idx=`8`
+                    &unique_idx=`4492`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_8_4492`
+        ]]]]
+
+        [[$accordionOuter?
+    &rows=`[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.specifications_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[jsonToHTML? &json=`{
+    "key": "cb_select_option_collapse_id",
+    "namespace": "formblocks",
+    "type": "textfield",
+    "area": "FormBlocks - CB fields"
+}`]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`4489`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`4490`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`referringChunks,referringTemplates`
+	&pattern_template=`patternLayoutElectronSystemSetting`
+	&pattern_name=`formblocks.cb_select_option_collapse_id`
+	]]
+</div>
+        <div class="column"></div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]`
+    &total=`3`
+    &padding=`padded`
+    &accordion_type=`fluid styled`
+    &tab_type=`regular`
+    &unique_idx=`4484`
+]]
+    </div>
+</div>
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`formblocks.cb_select_dropdown_id` &prefix=`cf_9_4501``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`formblocks.cb_select_dropdown_id` &prefix=`cl_9_4501``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_9_4501`?
+            &preview=``
+            &code=``
+            &sidebar_width=`five`
+            &pattern_name=`formblocks.cb_select_dropdown_id`
+            &pattern_template=`patternLayoutElectronSystemSetting`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`9`
+            &unique_idx=`4501`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`formblocks.cb_select_dropdown_id`
+                    &pattern_status=`green`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`formblocks.cb_select_dropdown_id`
+                    &pattern_template=`patternLayoutElectronSystemSetting`
+                    &pattern_status=`green`
+                    &idx=`9`
+                    &unique_idx=`4501`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_9_4501`
+        ]]]]
+
+        [[$accordionOuter?
+    &rows=`[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.specifications_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[jsonToHTML? &json=`{
+    "key": "cb_select_dropdown_id",
+    "namespace": "formblocks",
+    "type": "textfield",
+    "area": "FormBlocks - CB fields"
+}`]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`4498`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`4499`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`referringChunks,referringTemplates`
+	&pattern_template=`patternLayoutElectronSystemSetting`
+	&pattern_name=`formblocks.cb_select_dropdown_id`
+	]]
+</div>
+        <div class="column"></div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]`
+    &total=`3`
+    &padding=`padded`
+    &accordion_type=`fluid styled`
+    &tab_type=`regular`
+    &unique_idx=`4493`
+]]
+    </div>
+</div>
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`formblocks.cb_select_dropdown_auto_id` &prefix=`cf_10_4510``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`formblocks.cb_select_dropdown_auto_id` &prefix=`cl_10_4510``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_10_4510`?
+            &preview=``
+            &code=``
+            &sidebar_width=`five`
+            &pattern_name=`formblocks.cb_select_dropdown_auto_id`
+            &pattern_template=`patternLayoutElectronSystemSetting`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`10`
+            &unique_idx=`4510`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`formblocks.cb_select_dropdown_auto_id`
+                    &pattern_status=`green`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`formblocks.cb_select_dropdown_auto_id`
+                    &pattern_template=`patternLayoutElectronSystemSetting`
+                    &pattern_status=`green`
+                    &idx=`10`
+                    &unique_idx=`4510`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_10_4510`
+        ]]]]
+
+        [[$accordionOuter?
+    &rows=`[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.specifications_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[jsonToHTML? &json=`{
+    "key": "cb_select_dropdown_auto_id",
+    "namespace": "formblocks",
+    "type": "textfield",
+    "area": "FormBlocks - CB fields"
+}`]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`4507`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`4508`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`referringChunks,referringTemplates`
+	&pattern_template=`patternLayoutElectronSystemSetting`
+	&pattern_name=`formblocks.cb_select_dropdown_auto_id`
+	]]
+</div>
+        <div class="column"></div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]`
+    &total=`3`
+    &padding=`padded`
+    &accordion_type=`fluid styled`
+    &tab_type=`regular`
+    &unique_idx=`4502`
+]]
+    </div>
+</div>
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`formblocks.cb_accept_terms_id` &prefix=`cf_11_4519``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`formblocks.cb_accept_terms_id` &prefix=`cl_11_4519``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_11_4519`?
+            &preview=``
+            &code=``
+            &sidebar_width=`five`
+            &pattern_name=`formblocks.cb_accept_terms_id`
+            &pattern_template=`patternLayoutElectronSystemSetting`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`11`
+            &unique_idx=`4519`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`formblocks.cb_accept_terms_id`
+                    &pattern_status=`green`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`formblocks.cb_accept_terms_id`
+                    &pattern_template=`patternLayoutElectronSystemSetting`
+                    &pattern_status=`green`
+                    &idx=`11`
+                    &unique_idx=`4519`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutElectronSystemSetting`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_11_4519`
+        ]]]]
+
+        [[$accordionOuter?
+    &rows=`[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.specifications_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[jsonToHTML? &json=`{
+    "key": "cb_accept_terms_id",
+    "namespace": "formblocks",
+    "type": "textfield",
+    "area": "FormBlocks - CB fields"
+}`]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$accordionRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`4516`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`4517`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`referringChunks,referringTemplates`
+	&pattern_template=`patternLayoutElectronSystemSetting`
+	&pattern_name=`formblocks.cb_accept_terms_id`
+	]]
+</div>
+        <div class="column"></div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]`
+    &total=`3`
+    &padding=`padded`
+    &accordion_type=`fluid styled`
+    &tab_type=`regular`
+    &unique_idx=`4511`
+]]
+    </div>
+</div>

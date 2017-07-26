@@ -1,0 +1,785 @@
+id: 50
+pagetitle: '01 - FormBlocks'
+longtitle: 'Wrappers, row templates and helpers for use in form patterns'
+alias: formblocks
+published: 1
+parent: 14
+introtext: ''
+template: 2
+menuindex: 4
+createdby: 1
+createdon: 1500991099
+publishedon: 1500991099
+publishedby: 1
+menutitle: FormBlocks
+context_key: hub
+uri: patterns/atoms/formblocks
+properties: '{"contentblocks":{"content":"[{\"layout\":17,\"content\":{\"preview\":[{\"value\":\"{{PLACE EXAMPLE HERE}}\",\"lang\":\"html\",\"field\":14,\"settings\":[]}],\"code\":[{\"value\":\"[[Rowboat?\\n    &table=`modx_site_htmlsnippets`\\n    &tpl=`displayRawElement`\\n    &where=`{\\\"name\\\":\\\"[[+pattern_name]]\\\"}`\\n]]\",\"lang\":\"html\",\"field\":86,\"settings\":{\"label\":\"[[%romanesco.patterns.code_label]]\"}}],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-65\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-66\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.usage_title]]\",\"fieldId\":\"contentblocks-field-68\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-69\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-71\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.included_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":84,\"settings\":{\"pattern_list\":\"includedChunks,includedSnippets,includedTVs\",\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[{\"value\":\"[[%romanesco.patterns.referring_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringChunks,referringSnippets,referringTemplates\",\"pattern_name\":\"[[+pattern_name]]\"}}]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-72\"}}],\"field\":76,\"settings\":{\"layout_type\":\"tabs\",\"accordion_type\":\"\",\"tab_type\":\"regular\",\"padding\":\"padded\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"five\",\"alignment\":\"\",\"pattern_name\":\"fbRenderFormWrapper\",\"pattern_template\":\"patternLayoutAtom\"},\"parent\":0,\"title\":\"\"},{\"layout\":17,\"content\":{\"preview\":[{\"value\":\"{{PLACE EXAMPLE HERE}}\",\"lang\":\"html\",\"field\":14,\"settings\":[]}],\"code\":[{\"value\":\"[[Rowboat?\\n    &table=`modx_site_htmlsnippets`\\n    &tpl=`displayRawElement`\\n    &where=`{\\\"name\\\":\\\"[[+pattern_name]]\\\"}`\\n]]\",\"lang\":\"html\",\"field\":86,\"settings\":{\"label\":\"[[%romanesco.patterns.code_label]]\"}}],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-50\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-51\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.usage_title]]\",\"fieldId\":\"contentblocks-field-53\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-54\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-56\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.included_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":84,\"settings\":{\"pattern_list\":\"includedChunks,includedSnippets,includedTVs\",\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[{\"value\":\"[[%romanesco.patterns.referring_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringChunks,referringSnippets,referringTemplates\",\"pattern_name\":\"[[+pattern_name]]\"}}]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-57\"}}],\"field\":76,\"settings\":{\"layout_type\":\"tabs\",\"accordion_type\":\"\",\"tab_type\":\"regular\",\"padding\":\"padded\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"five\",\"alignment\":\"\",\"pattern_name\":\"fbAutoresponder\",\"pattern_template\":\"patternLayoutAtom\"},\"parent\":0,\"title\":\"\"},{\"layout\":17,\"content\":{\"preview\":[{\"value\":\"{{PLACE EXAMPLE HERE}}\",\"lang\":\"html\",\"field\":14,\"settings\":[]}],\"code\":[{\"value\":\"[[Rowboat?\\n    &table=`modx_site_htmlsnippets`\\n    &tpl=`displayRawElement`\\n    &where=`{\\\"name\\\":\\\"[[+pattern_name]]\\\"}`\\n]]\",\"lang\":\"html\",\"field\":86,\"settings\":{\"label\":\"[[%romanesco.patterns.code_label]]\"}}],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-35\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-36\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.usage_title]]\",\"fieldId\":\"contentblocks-field-38\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-39\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-41\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.included_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":84,\"settings\":{\"pattern_list\":\"includedChunks,includedSnippets,includedTVs\",\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[{\"value\":\"[[%romanesco.patterns.referring_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringChunks,referringSnippets,referringTemplates\",\"pattern_name\":\"[[+pattern_name]]\"}}]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-42\"}}],\"field\":76,\"settings\":{\"layout_type\":\"tabs\",\"accordion_type\":\"\",\"tab_type\":\"regular\",\"padding\":\"padded\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"five\",\"alignment\":\"\",\"pattern_name\":\"fbSelectDropdownRow\",\"pattern_template\":\"patternLayoutAtom\"},\"parent\":0,\"title\":\"\"},{\"layout\":17,\"content\":{\"preview\":[{\"value\":\"{{PLACE EXAMPLE HERE}}\",\"lang\":\"html\",\"field\":14,\"settings\":[]}],\"code\":[{\"value\":\"[[Rowboat?\\n    &table=`modx_site_htmlsnippets`\\n    &tpl=`displayRawElement`\\n    &where=`{\\\"name\\\":\\\"[[+pattern_name]]\\\"}`\\n]]\",\"lang\":\"html\",\"field\":86,\"settings\":{\"label\":\"[[%romanesco.patterns.code_label]]\"}}],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-20\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-21\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.usage_title]]\",\"fieldId\":\"contentblocks-field-23\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-24\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-26\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.included_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":84,\"settings\":{\"pattern_list\":\"includedChunks,includedSnippets,includedTVs\",\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[{\"value\":\"[[%romanesco.patterns.referring_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringChunks,referringSnippets,referringTemplates\",\"pattern_name\":\"[[+pattern_name]]\"}}]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-27\"}}],\"field\":76,\"settings\":{\"layout_type\":\"tabs\",\"accordion_type\":\"\",\"tab_type\":\"regular\",\"padding\":\"padded\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"five\",\"alignment\":\"\",\"pattern_name\":\"fbSelectOptionRow\",\"pattern_template\":\"patternLayoutAtom\"},\"parent\":0,\"title\":\"\"},{\"layout\":17,\"content\":{\"preview\":[{\"value\":\"{{PLACE EXAMPLE HERE}}\",\"lang\":\"html\",\"field\":14,\"settings\":[]}],\"code\":[{\"value\":\"[[Rowboat?\\n    &table=`modx_site_htmlsnippets`\\n    &tpl=`displayRawElement`\\n    &where=`{\\\"name\\\":\\\"[[+pattern_name]]\\\"}`\\n]]\",\"lang\":\"html\",\"field\":86,\"settings\":{\"label\":\"[[%romanesco.patterns.code_label]]\"}}],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-5\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-6\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.usage_title]]\",\"fieldId\":\"contentblocks-field-8\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-9\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-11\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.included_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":84,\"settings\":{\"pattern_list\":\"includedChunks,includedSnippets,includedTVs\",\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[{\"value\":\"[[%romanesco.patterns.referring_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringChunks,referringSnippets,referringTemplates\",\"pattern_name\":\"[[+pattern_name]]\"}}]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-12\"}}],\"field\":76,\"settings\":{\"layout_type\":\"tabs\",\"accordion_type\":\"\",\"tab_type\":\"regular\",\"padding\":\"padded\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"five\",\"alignment\":\"\",\"pattern_name\":\"fbStripWordsLabel\",\"pattern_template\":\"patternLayoutAtom\"},\"parent\":0,\"title\":\"\"}]","linear":[{"value":"{{PLACE EXAMPLE HERE}}","lang":"html","field":14,"settings":[]},{"value":"[[Rowboat?\n    &table=`modx_site_htmlsnippets`\n    &tpl=`displayRawElement`\n    &where=`{\"name\":\"[[+pattern_name]]\"}`\n]]","lang":"html","field":86,"settings":{"label":"[[%romanesco.patterns.code_label]]"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-65"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-66"}},{"heading":{"value":"[[%romanesco.patterns.usage_title]]","fieldId":"contentblocks-field-68"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-69"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-71"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.included_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":84,"settings":{"pattern_list":"includedChunks,includedSnippets,includedTVs","pattern_name":"[[+pattern_name]]"}}],"col_2":[{"value":"[[%romanesco.patterns.referring_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringChunks,referringSnippets,referringTemplates","pattern_name":"[[+pattern_name]]"}}]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-72"}}],"field":76,"settings":{"layout_type":"tabs","accordion_type":"","tab_type":"regular","padding":"padded"}},{"value":"{{PLACE EXAMPLE HERE}}","lang":"html","field":14,"settings":[]},{"value":"[[Rowboat?\n    &table=`modx_site_htmlsnippets`\n    &tpl=`displayRawElement`\n    &where=`{\"name\":\"[[+pattern_name]]\"}`\n]]","lang":"html","field":86,"settings":{"label":"[[%romanesco.patterns.code_label]]"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-50"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-51"}},{"heading":{"value":"[[%romanesco.patterns.usage_title]]","fieldId":"contentblocks-field-53"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-54"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-56"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.included_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":84,"settings":{"pattern_list":"includedChunks,includedSnippets,includedTVs","pattern_name":"[[+pattern_name]]"}}],"col_2":[{"value":"[[%romanesco.patterns.referring_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringChunks,referringSnippets,referringTemplates","pattern_name":"[[+pattern_name]]"}}]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-57"}}],"field":76,"settings":{"layout_type":"tabs","accordion_type":"","tab_type":"regular","padding":"padded"}},{"value":"{{PLACE EXAMPLE HERE}}","lang":"html","field":14,"settings":[]},{"value":"[[Rowboat?\n    &table=`modx_site_htmlsnippets`\n    &tpl=`displayRawElement`\n    &where=`{\"name\":\"[[+pattern_name]]\"}`\n]]","lang":"html","field":86,"settings":{"label":"[[%romanesco.patterns.code_label]]"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-35"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-36"}},{"heading":{"value":"[[%romanesco.patterns.usage_title]]","fieldId":"contentblocks-field-38"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-39"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-41"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.included_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":84,"settings":{"pattern_list":"includedChunks,includedSnippets,includedTVs","pattern_name":"[[+pattern_name]]"}}],"col_2":[{"value":"[[%romanesco.patterns.referring_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringChunks,referringSnippets,referringTemplates","pattern_name":"[[+pattern_name]]"}}]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-42"}}],"field":76,"settings":{"layout_type":"tabs","accordion_type":"","tab_type":"regular","padding":"padded"}},{"value":"{{PLACE EXAMPLE HERE}}","lang":"html","field":14,"settings":[]},{"value":"[[Rowboat?\n    &table=`modx_site_htmlsnippets`\n    &tpl=`displayRawElement`\n    &where=`{\"name\":\"[[+pattern_name]]\"}`\n]]","lang":"html","field":86,"settings":{"label":"[[%romanesco.patterns.code_label]]"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-20"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-21"}},{"heading":{"value":"[[%romanesco.patterns.usage_title]]","fieldId":"contentblocks-field-23"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-24"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-26"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.included_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":84,"settings":{"pattern_list":"includedChunks,includedSnippets,includedTVs","pattern_name":"[[+pattern_name]]"}}],"col_2":[{"value":"[[%romanesco.patterns.referring_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringChunks,referringSnippets,referringTemplates","pattern_name":"[[+pattern_name]]"}}]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-27"}}],"field":76,"settings":{"layout_type":"tabs","accordion_type":"","tab_type":"regular","padding":"padded"}},{"value":"{{PLACE EXAMPLE HERE}}","lang":"html","field":14,"settings":[]},{"value":"[[Rowboat?\n    &table=`modx_site_htmlsnippets`\n    &tpl=`displayRawElement`\n    &where=`{\"name\":\"[[+pattern_name]]\"}`\n]]","lang":"html","field":86,"settings":{"label":"[[%romanesco.patterns.code_label]]"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-5"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-6"}},{"heading":{"value":"[[%romanesco.patterns.usage_title]]","fieldId":"contentblocks-field-8"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-9"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-11"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.included_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":84,"settings":{"pattern_list":"includedChunks,includedSnippets,includedTVs","pattern_name":"[[+pattern_name]]"}}],"col_2":[{"value":"[[%romanesco.patterns.referring_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringChunks,referringSnippets,referringTemplates","pattern_name":"[[+pattern_name]]"}}]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-12"}}],"field":76,"settings":{"layout_type":"tabs","accordion_type":"","tab_type":"regular","padding":"padded"}}],"fieldcounts":{"14":5,"86":5,"76":5},"_isContentBlocks":true}}'
+tvs:
+    header_background: '@INHERIT'
+    header_background_img: ''
+    header_cta: '@INHERIT'
+    header_inheritance: '@INHERIT inherit_titles||inherit_background'
+    header_subtitle: '@INHERIT'
+    header_title: '@INHERIT'
+    overview_icon_font: ''
+    overview_icon_svg: ''
+    overview_img_landscape: ''
+    overview_img_pano: ''
+    overview_img_portrait: ''
+    overview_img_priority: landscape
+    overview_img_square: ''
+    overview_img_wide: ''
+    overview_link_text: ''
+    status_assigned_user: ''
+    status_help: ''
+    status_improvements: ''
+    status_indicator: not-done
+    status_notes: ''
+
+-----
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutAtom`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`fbRenderFormWrapper` &prefix=`cf_1_2098``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutAtom`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`fbRenderFormWrapper` &prefix=`cl_1_2098``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_1_2098`?
+            &preview=`[[!cbRenderCodeField?
+    &valueRendered=`{{PLACE EXAMPLE HERE}}`
+    &valueRaw=`{{PLACE EXAMPLE HERE}}`
+    &renderTag=`ignore`
+]]`
+            &code=`[[$codeSnippet?
+    &value=`[[Rowboat?
+    &table=`modx_site_htmlsnippets`
+    &tpl=`displayRawElement`
+    &where=`{"name":"fbRenderFormWrapper"}`
+]]`
+    &lang=`html`
+    &label=`[[%romanesco.patterns.code_label]]`
+]]`
+            &sidebar_width=`five`
+            &pattern_name=`fbRenderFormWrapper`
+            &pattern_template=`patternLayoutAtom`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`1`
+            &unique_idx=`2098`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutAtom`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`fbRenderFormWrapper`
+                    &pattern_status=`green`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`fbRenderFormWrapper`
+                    &pattern_template=`patternLayoutAtom`
+                    &pattern_status=`green`
+                    &idx=`1`
+                    &unique_idx=`2098`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutAtom`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_1_2098`
+        ]]]]
+
+        [[$tabsOuter?
+    &rows=`[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.usage_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.included_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`2093`
+]]
+
+[[$includedPatternsOuter? 
+	&unique_idx=`2094`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`includedChunks,includedSnippets,includedTVs`
+	&pattern_template=`patternLayoutAtom`
+	&pattern_name=`fbRenderFormWrapper`
+	]]
+</div>
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`2095`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`2096`
+	&layout_id=`12`
+	&layout_column=`col_2`
+	&layout_idx=`0`
+	&pattern_list=`referringChunks,referringSnippets,referringTemplates`
+	&pattern_template=`patternLayoutAtom`
+	&pattern_name=`fbRenderFormWrapper`
+	]]
+</div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]`
+    &total=`3`
+    &padding=`padded`
+    &accordion_type=``
+    &tab_type=`regular`
+    &unique_idx=`2088`
+]]
+    </div>
+</div>
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutAtom`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`fbAutoresponder` &prefix=`cf_2_2111``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutAtom`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`fbAutoresponder` &prefix=`cl_2_2111``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_2_2111`?
+            &preview=`[[!cbRenderCodeField?
+    &valueRendered=`{{PLACE EXAMPLE HERE}}`
+    &valueRaw=`{{PLACE EXAMPLE HERE}}`
+    &renderTag=`ignore`
+]]`
+            &code=`[[$codeSnippet?
+    &value=`[[Rowboat?
+    &table=`modx_site_htmlsnippets`
+    &tpl=`displayRawElement`
+    &where=`{"name":"fbAutoresponder"}`
+]]`
+    &lang=`html`
+    &label=`[[%romanesco.patterns.code_label]]`
+]]`
+            &sidebar_width=`five`
+            &pattern_name=`fbAutoresponder`
+            &pattern_template=`patternLayoutAtom`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`2`
+            &unique_idx=`2111`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutAtom`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`fbAutoresponder`
+                    &pattern_status=`green`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`fbAutoresponder`
+                    &pattern_template=`patternLayoutAtom`
+                    &pattern_status=`green`
+                    &idx=`2`
+                    &unique_idx=`2111`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutAtom`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_2_2111`
+        ]]]]
+
+        [[$tabsOuter?
+    &rows=`[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.usage_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.included_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`2106`
+]]
+
+[[$includedPatternsOuter? 
+	&unique_idx=`2107`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`includedChunks,includedSnippets,includedTVs`
+	&pattern_template=`patternLayoutAtom`
+	&pattern_name=`fbAutoresponder`
+	]]
+</div>
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`2108`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`2109`
+	&layout_id=`12`
+	&layout_column=`col_2`
+	&layout_idx=`0`
+	&pattern_list=`referringChunks,referringSnippets,referringTemplates`
+	&pattern_template=`patternLayoutAtom`
+	&pattern_name=`fbAutoresponder`
+	]]
+</div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]`
+    &total=`3`
+    &padding=`padded`
+    &accordion_type=``
+    &tab_type=`regular`
+    &unique_idx=`2101`
+]]
+    </div>
+</div>
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutAtom`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`fbSelectDropdownRow` &prefix=`cf_3_2124``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutAtom`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`fbSelectDropdownRow` &prefix=`cl_3_2124``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_3_2124`?
+            &preview=`[[!cbRenderCodeField?
+    &valueRendered=`{{PLACE EXAMPLE HERE}}`
+    &valueRaw=`{{PLACE EXAMPLE HERE}}`
+    &renderTag=`ignore`
+]]`
+            &code=`[[$codeSnippet?
+    &value=`[[Rowboat?
+    &table=`modx_site_htmlsnippets`
+    &tpl=`displayRawElement`
+    &where=`{"name":"fbSelectDropdownRow"}`
+]]`
+    &lang=`html`
+    &label=`[[%romanesco.patterns.code_label]]`
+]]`
+            &sidebar_width=`five`
+            &pattern_name=`fbSelectDropdownRow`
+            &pattern_template=`patternLayoutAtom`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`3`
+            &unique_idx=`2124`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutAtom`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`fbSelectDropdownRow`
+                    &pattern_status=`green`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`fbSelectDropdownRow`
+                    &pattern_template=`patternLayoutAtom`
+                    &pattern_status=`green`
+                    &idx=`3`
+                    &unique_idx=`2124`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutAtom`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_3_2124`
+        ]]]]
+
+        [[$tabsOuter?
+    &rows=`[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.usage_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.included_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`2119`
+]]
+
+[[$includedPatternsOuter? 
+	&unique_idx=`2120`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`includedChunks,includedSnippets,includedTVs`
+	&pattern_template=`patternLayoutAtom`
+	&pattern_name=`fbSelectDropdownRow`
+	]]
+</div>
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`2121`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`2122`
+	&layout_id=`12`
+	&layout_column=`col_2`
+	&layout_idx=`0`
+	&pattern_list=`referringChunks,referringSnippets,referringTemplates`
+	&pattern_template=`patternLayoutAtom`
+	&pattern_name=`fbSelectDropdownRow`
+	]]
+</div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]`
+    &total=`3`
+    &padding=`padded`
+    &accordion_type=``
+    &tab_type=`regular`
+    &unique_idx=`2114`
+]]
+    </div>
+</div>
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutAtom`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`fbSelectOptionRow` &prefix=`cf_4_2137``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutAtom`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`fbSelectOptionRow` &prefix=`cl_4_2137``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_4_2137`?
+            &preview=`[[!cbRenderCodeField?
+    &valueRendered=`{{PLACE EXAMPLE HERE}}`
+    &valueRaw=`{{PLACE EXAMPLE HERE}}`
+    &renderTag=`ignore`
+]]`
+            &code=`[[$codeSnippet?
+    &value=`[[Rowboat?
+    &table=`modx_site_htmlsnippets`
+    &tpl=`displayRawElement`
+    &where=`{"name":"fbSelectOptionRow"}`
+]]`
+    &lang=`html`
+    &label=`[[%romanesco.patterns.code_label]]`
+]]`
+            &sidebar_width=`five`
+            &pattern_name=`fbSelectOptionRow`
+            &pattern_template=`patternLayoutAtom`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`4`
+            &unique_idx=`2137`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutAtom`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`fbSelectOptionRow`
+                    &pattern_status=`green`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`fbSelectOptionRow`
+                    &pattern_template=`patternLayoutAtom`
+                    &pattern_status=`green`
+                    &idx=`4`
+                    &unique_idx=`2137`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutAtom`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_4_2137`
+        ]]]]
+
+        [[$tabsOuter?
+    &rows=`[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.usage_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.included_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`2132`
+]]
+
+[[$includedPatternsOuter? 
+	&unique_idx=`2133`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`includedChunks,includedSnippets,includedTVs`
+	&pattern_template=`patternLayoutAtom`
+	&pattern_name=`fbSelectOptionRow`
+	]]
+</div>
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`2134`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`2135`
+	&layout_id=`12`
+	&layout_column=`col_2`
+	&layout_idx=`0`
+	&pattern_list=`referringChunks,referringSnippets,referringTemplates`
+	&pattern_template=`patternLayoutAtom`
+	&pattern_name=`fbSelectOptionRow`
+	]]
+</div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]`
+    &total=`3`
+    &padding=`padded`
+    &accordion_type=``
+    &tab_type=`regular`
+    &unique_idx=`2127`
+]]
+    </div>
+</div>
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutAtom`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`fbStripWordsLabel` &prefix=`cf_5_2150``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutAtom`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`fbStripWordsLabel` &prefix=`cl_5_2150``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_5_2150`?
+            &preview=`[[!cbRenderCodeField?
+    &valueRendered=`{{PLACE EXAMPLE HERE}}`
+    &valueRaw=`{{PLACE EXAMPLE HERE}}`
+    &renderTag=`ignore`
+]]`
+            &code=`[[$codeSnippet?
+    &value=`[[Rowboat?
+    &table=`modx_site_htmlsnippets`
+    &tpl=`displayRawElement`
+    &where=`{"name":"fbStripWordsLabel"}`
+]]`
+    &lang=`html`
+    &label=`[[%romanesco.patterns.code_label]]`
+]]`
+            &sidebar_width=`five`
+            &pattern_name=`fbStripWordsLabel`
+            &pattern_template=`patternLayoutAtom`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`5`
+            &unique_idx=`2150`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutAtom`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`fbStripWordsLabel`
+                    &pattern_status=`green`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`fbStripWordsLabel`
+                    &pattern_template=`patternLayoutAtom`
+                    &pattern_status=`green`
+                    &idx=`5`
+                    &unique_idx=`2150`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutAtom`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_5_2150`
+        ]]]]
+
+        [[$tabsOuter?
+    &rows=`[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.usage_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.included_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`2145`
+]]
+
+[[$includedPatternsOuter? 
+	&unique_idx=`2146`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`includedChunks,includedSnippets,includedTVs`
+	&pattern_template=`patternLayoutAtom`
+	&pattern_name=`fbStripWordsLabel`
+	]]
+</div>
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`2147`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`2148`
+	&layout_id=`12`
+	&layout_column=`col_2`
+	&layout_idx=`0`
+	&pattern_list=`referringChunks,referringSnippets,referringTemplates`
+	&pattern_template=`patternLayoutAtom`
+	&pattern_name=`fbStripWordsLabel`
+	]]
+</div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]`
+    &total=`3`
+    &padding=`padded`
+    &accordion_type=``
+    &tab_type=`regular`
+    &unique_idx=`2140`
+]]
+    </div>
+</div>

@@ -1,0 +1,103 @@
+id: 164
+pagetitle: 'Welcome to MODX'
+alias: welcome-to-modx
+parent: 7
+introtext: ''
+template: 9
+cacheable: 0
+createdby: 1
+createdon: 1501081415
+hidemenu: 1
+context_key: global
+uri: call-to-actions/welcome-to-modx
+show_in_tree: 0
+properties: '{"contentblocks":{"content":"[{\"layout\":15,\"content\":{\"main\":[{\"value\":\"Welcome to the MODX multiverse\",\"level\":\"h1\",\"field\":1,\"settings\":[]},{\"value\":\"<p>A CMS that gives you complete <strong>create freedom<\/strong>. No default templates. Extensible in every way.<br>A vibrant, skilled and enthousiastic community that is always willing to lend a helping hand.<\/p>\",\"field\":6,\"settings\":[]},{\"link\":\"\",\"linkType\":\"link\",\"field\":9,\"settings\":{\"button_text\":\"Get started\",\"button_type\":\"secondary\",\"button_options\":\"\",\"button_size\":\"big\",\"new_window\":\"0\",\"icon_class\":\"\",\"icon_options\":\"\"}},{\"link\":\"\",\"linkType\":\"link\",\"field\":9,\"settings\":{\"button_text\":\"What''s new?\",\"button_type\":\"regular\",\"button_options\":\"basic\",\"button_size\":\"big\",\"new_window\":\"0\",\"icon_class\":\"newspaper icon\",\"icon_options\":\"right,labeled\"}}]},\"settings\":[],\"parent\":0,\"title\":\"\"}]","linear":[{"value":"Welcome to the MODX multiverse","level":"h1","field":1,"settings":[]},{"value":"<p>A CMS that gives you complete <strong>create freedom<\/strong>. No default templates. Extensible in every way.<br>A vibrant, skilled and enthousiastic community that is always willing to lend a helping hand.<\/p>","field":6,"settings":[]},{"link":"","linkType":"link","field":9,"settings":{"button_text":"Get started","button_type":"secondary","button_options":"","button_size":"big","new_window":"0","icon_class":"","icon_options":""}},{"link":"","linkType":"link","field":9,"settings":{"button_text":"What''s new?","button_type":"regular","button_options":"basic","button_size":"big","new_window":"0","icon_class":"newspaper icon","icon_options":"right,labeled"}}],"fieldcounts":{"1":1,"6":1,"9":2},"_isContentBlocks":true}}'
+tvs:
+    cta_availability: header||sidebar||content
+
+-----
+
+[[If?
+    &subject=``
+    &operator=`notempty`
+    &then=`
+    <a class="item" href="[[~]]">
+        <div class="content">
+            [[$headingBasic?
+    &value=`Welcome to the MODX multiverse`
+    &level=`h1`
+    &alignment=``
+    &unique_idx=`1`
+]]
+
+[[$richTextSegment?
+    &content=`<p>A CMS that gives you complete <strong>create freedom</strong>. No default templates. Extensible in every way.<br>A vibrant, skilled and enthousiastic community that is always willing to lend a helping hand.</p>`
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]
+
+[[$buttonOuter?
+    &link=``
+    &button_text=`Get started`
+    &button_type=`secondary`
+    &button_options=``
+    &button_size=`big`
+    &new_window=`0`
+    &icon_class=``
+    &icon_options=``
+    &unique_idx=`3`
+]]
+
+[[$buttonOuter?
+    &link=``
+    &button_text=`What's new?`
+    &button_type=`regular`
+    &button_options=`basic`
+    &button_size=`big`
+    &new_window=`0`
+    &icon_class=`newspaper icon`
+    &icon_options=`right,labeled`
+    &unique_idx=`4`
+]]
+        </div>
+    </a>
+    `
+    &else=`[[$headingBasic?
+    &value=`Welcome to the MODX multiverse`
+    &level=`h1`
+    &alignment=``
+    &unique_idx=`1`
+]]
+
+[[$richTextSegment?
+    &content=`<p>A CMS that gives you complete <strong>create freedom</strong>. No default templates. Extensible in every way.<br>A vibrant, skilled and enthousiastic community that is always willing to lend a helping hand.</p>`
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]
+
+[[$buttonOuter?
+    &link=``
+    &button_text=`Get started`
+    &button_type=`secondary`
+    &button_options=``
+    &button_size=`big`
+    &new_window=`0`
+    &icon_class=``
+    &icon_options=``
+    &unique_idx=`3`
+]]
+
+[[$buttonOuter?
+    &link=``
+    &button_text=`What's new?`
+    &button_type=`regular`
+    &button_options=`basic`
+    &button_size=`big`
+    &new_window=`0`
+    &icon_class=`newspaper icon`
+    &icon_options=`right,labeled`
+    &unique_idx=`4`
+]]`
+]]

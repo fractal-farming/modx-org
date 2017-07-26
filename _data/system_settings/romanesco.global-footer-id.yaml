@@ -1,4 +1,5 @@
 key: romanesco.global_footer_id
+value: '5'
 xtype: numberfield
 namespace: romanesco
 area: Pages

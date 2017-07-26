@@ -1,4 +1,5 @@
 key: romanesco.global_backgrounds_id
+value: '8'
 xtype: numberfield
 namespace: romanesco
 area: Pages

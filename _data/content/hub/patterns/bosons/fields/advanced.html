@@ -1,0 +1,1380 @@
+id: 144
+pagetitle: '08 - Fields - Advanced'
+alias: advanced
+published: 1
+parent: 104
+introtext: ''
+template: 2
+menuindex: 5
+createdby: 1
+createdon: 1500991104
+publishedon: 1500991104
+publishedby: 1
+menutitle: Advanced
+context_key: hub
+uri: patterns/bosons/fields/advanced
+properties: '{"contentblocks":{"content":"[{\"layout\":17,\"content\":{\"preview\":[{\"value\":\"An h1 header============Paragraphs are separated by a blank line.2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized listslook like:  * this one  * that one  * the other oneNote that --- not considering the asterisk --- the actual textcontent starts at 4-columns in.> Block quotes are> written like so.\",\"field\":72,\"settings\":[]}],\"code\":[{\"value\":\"[[Rowboat?\\n    &table=`modx_contentblocks_field`\\n    &tpl=`displayRawTemplate`\\n    &where=`{\\\"name\\\":\\\"[[+pattern_name]]\\\",\\\"parent\\\":\\\"0\\\"}`\\n]]\",\"lang\":\"html\",\"field\":86,\"settings\":{\"label\":\"[[%romanesco.patterns.template_label]]\"}}],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-4\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"<p>[[+[[+cf]].description]]<\/p>\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-5\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.usage_title]]\",\"fieldId\":\"contentblocks-field-7\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-8\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.settings_title]]\",\"fieldId\":\"contentblocks-field-10\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"[[+[[+cf]].settings_json]]\",\"lang\":\"json\",\"field\":83,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-11\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-13\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.included_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":84,\"settings\":{\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[{\"value\":\"[[%romanesco.patterns.referring_pages]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringPatterns\",\"pattern_template\":\"[[+pattern_template]]\",\"pattern_name\":\"[[+pattern_name]]\"}}]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-14\"}}],\"field\":76,\"settings\":{\"layout_type\":\"tabs\",\"accordion_type\":\"\",\"tab_type\":\"regular\",\"padding\":\"padded\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"six\",\"alignment\":\"\",\"pattern_name\":\"Markdown Text\",\"pattern_template\":\"patternLayoutBosonField\",\"pattern_status\":\"orange\"},\"parent\":0,\"title\":\"\"},{\"layout\":17,\"content\":{\"preview\":[{\"value\":\"<?php\\n$count = 0;\\n$parent = isset($parent) ? (integer) $parent : 0;\\nif ($parent > 0) {\\n    $criteria = array(\\n        ''parent'' => $parent,\\n        ''deleted'' => false,\\n        ''published'' => true,\\n    );\\n    $count = $modx->getCount(''modResource'', $criteria);\\n}\\nreturn (string) $count;\",\"lang\":\"php\",\"field\":13,\"settings\":{\"label\":\"Example\"}}],\"code\":[{\"value\":\"[[Rowboat?\\n    &table=`modx_contentblocks_field`\\n    &tpl=`displayRawTemplate`\\n    &where=`{\\\"name\\\":\\\"[[+pattern_name]]\\\",\\\"parent\\\":\\\"0\\\"}`\\n]]\",\"lang\":\"html\",\"field\":86,\"settings\":{\"label\":\"[[%romanesco.patterns.template_label]]\"}}],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-22\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"<p>[[+[[+cf]].description]]<\/p>\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-23\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.usage_title]]\",\"fieldId\":\"contentblocks-field-25\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-26\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.settings_title]]\",\"fieldId\":\"contentblocks-field-28\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"[[+[[+cf]].settings_json]]\",\"lang\":\"json\",\"field\":83,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-29\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-31\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.included_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":84,\"settings\":{\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[{\"value\":\"[[%romanesco.patterns.referring_pages]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringPatterns\",\"pattern_template\":\"[[+pattern_template]]\",\"pattern_name\":\"[[+pattern_name]]\"}}]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-32\"}}],\"field\":76,\"settings\":{\"layout_type\":\"tabs\",\"accordion_type\":\"\",\"tab_type\":\"regular\",\"padding\":\"padded\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"six\",\"alignment\":\"\",\"pattern_name\":\"Code (Display)\",\"pattern_template\":\"patternLayoutBosonField\"},\"parent\":0,\"title\":\"\"},{\"layout\":17,\"content\":{\"preview\":[{\"value\":\"Child count for [[#[[*parent]].menutitle]]: [[getChildCount? &parent=`[[*parent]]`]]\",\"lang\":\"html\",\"field\":86,\"settings\":{\"label\":\"Example\"}}],\"code\":[{\"value\":\"[[Rowboat?\\n    &table=`modx_contentblocks_field`\\n    &tpl=`displayRawTemplate`\\n    &where=`{\\\"name\\\":\\\"[[+pattern_name]]\\\",\\\"parent\\\":\\\"0\\\"}`\\n]]\",\"lang\":\"html\",\"field\":86,\"settings\":{\"label\":\"[[%romanesco.patterns.template_label]]\"}}],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-40\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"<p>[[+[[+cf]].description]]<\/p>\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-41\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.usage_title]]\",\"fieldId\":\"contentblocks-field-43\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-44\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.settings_title]]\",\"fieldId\":\"contentblocks-field-46\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"[[+[[+cf]].settings_json]]\",\"lang\":\"json\",\"field\":83,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-47\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-49\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.included_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":84,\"settings\":{\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[{\"value\":\"[[%romanesco.patterns.referring_pages]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringPatterns\",\"pattern_template\":\"[[+pattern_template]]\",\"pattern_name\":\"[[+pattern_name]]\"}}]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-50\"}}],\"field\":76,\"settings\":{\"layout_type\":\"tabs\",\"accordion_type\":\"\",\"tab_type\":\"regular\",\"padding\":\"padded\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"six\",\"alignment\":\"\",\"pattern_name\":\"Code (Execute)\",\"pattern_template\":\"patternLayoutBosonField\"},\"parent\":0,\"title\":\"\"},{\"layout\":17,\"content\":{\"preview\":[{\"value\":\"<div class=\\\"ui vertical steps\\\">\\n    <div class=\\\"completed step\\\">\\n        <i class=\\\"truck icon\\\"><\/i>\\n        <div class=\\\"content\\\">\\n            <div class=\\\"title\\\">Shipping<\/div>\\n            <div class=\\\"description\\\">Choose your shipping options<\/div>\\n        <\/div>\\n    <\/div>\\n    <div class=\\\"completed step\\\">\\n        <i class=\\\"credit card icon\\\"><\/i>\\n        <div class=\\\"content\\\">\\n            <div class=\\\"title\\\">Billing<\/div>\\n            <div class=\\\"description\\\">Enter billing information<\/div>\\n        <\/div>\\n    <\/div>\\n    <div class=\\\"active step\\\">\\n        <i class=\\\"info icon\\\"><\/i>\\n        <div class=\\\"content\\\">\\n            <div class=\\\"title\\\">Confirm Order<\/div>\\n            <div class=\\\"description\\\">Verify order details<\/div>\\n        <\/div>\\n    <\/div>\\n<\/div>\",\"lang\":\"html\",\"field\":14,\"settings\":{\"render_tag\":\"ignore\"}}],\"code\":[{\"value\":\"[[Rowboat?\\n    &table=`modx_contentblocks_field`\\n    &tpl=`displayRawTemplate`\\n    &where=`{\\\"name\\\":\\\"[[+pattern_name]]\\\",\\\"parent\\\":\\\"0\\\"}`\\n]]\",\"lang\":\"html\",\"field\":86,\"settings\":{\"label\":\"[[%romanesco.patterns.template_label]]\"}}],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-58\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"<p>[[+[[+cf]].description]]<\/p>\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-59\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.usage_title]]\",\"fieldId\":\"contentblocks-field-61\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-62\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.settings_title]]\",\"fieldId\":\"contentblocks-field-64\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"[[+[[+cf]].settings_json]]\",\"lang\":\"json\",\"field\":83,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-65\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-67\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.included_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":84,\"settings\":{\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[{\"value\":\"[[%romanesco.patterns.referring_pages]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringPatterns\",\"pattern_template\":\"[[+pattern_template]]\",\"pattern_name\":\"[[+pattern_name]]\"}}]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-68\"}}],\"field\":76,\"settings\":{\"layout_type\":\"tabs\",\"accordion_type\":\"\",\"tab_type\":\"regular\",\"padding\":\"padded\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"six\",\"alignment\":\"\",\"pattern_name\":\"HTML Code\",\"pattern_template\":\"patternLayoutBosonField\"},\"parent\":0,\"title\":\"\"},{\"layout\":17,\"content\":{\"preview\":[{\"snippet\":\"pdoMenu\",\"snippet_properties\":{\"parents\":\"[[*parent]]\",\"limit\":\"4\",\"tplOuter\":\"@INLINE <div class=\\\"ui bulleted list\\\">[[+wrapper]]<\/div>\",\"tpl\":\"navItem\"},\"uncached\":\"\",\"field\":16,\"settings\":[]}],\"code\":[{\"value\":\"[[Rowboat?\\n    &table=`modx_contentblocks_field`\\n    &tpl=`displayRawTemplate`\\n    &where=`{\\\"name\\\":\\\"[[+pattern_name]]\\\",\\\"parent\\\":\\\"0\\\"}`\\n]]\",\"lang\":\"html\",\"field\":86,\"settings\":{\"label\":\"[[%romanesco.patterns.template_label]]\"}},{\"value\":\"[[+[[+cf]].wrapper_template]]\",\"lang\":\"html\",\"field\":86,\"settings\":{\"label\":\"[[%romanesco.patterns.template_wrapper_label]]\"}}],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-77\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"<p>[[+[[+cf]].description]]<\/p>\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-78\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.usage_title]]\",\"fieldId\":\"contentblocks-field-80\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-81\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.settings_title]]\",\"fieldId\":\"contentblocks-field-83\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"[[+[[+cf]].settings_json]]\",\"lang\":\"json\",\"field\":83,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-84\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-86\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.included_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":84,\"settings\":{\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[{\"value\":\"[[%romanesco.patterns.referring_pages]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringPatterns\",\"pattern_template\":\"[[+pattern_template]]\",\"pattern_name\":\"[[+pattern_name]]\"}}]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-87\"}}],\"field\":76,\"settings\":{\"layout_type\":\"tabs\",\"accordion_type\":\"\",\"tab_type\":\"regular\",\"padding\":\"padded\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"six\",\"alignment\":\"\",\"pattern_name\":\"Snippet\",\"pattern_template\":\"patternLayoutBosonField\"},\"parent\":0,\"title\":\"\"},{\"layout\":17,\"content\":{\"preview\":[{\"value\":\"{\\n    \\\"pagetitle\\\": \\\"08 - Fields - Advanced\\\",\\n    \\\"alias\\\": \\\"advanced\\\",\\n    \\\"menutitle\\\": \\\"Advanced\\\",\\n    \\\"parent\\\": \\\"08 - Fields\\\",\\n    \\\"context_key\\\": \\\"hub\\\",\\n    \\\"template\\\": \\\"BasicDetail\\\",\\n    \\\"published\\\": \\\"1\\\"\\n}\",\"lang\":\"json\",\"field\":83,\"settings\":[]}],\"code\":[{\"value\":\"[[Rowboat?\\n    &table=`modx_contentblocks_field`\\n    &tpl=`displayRawTemplate`\\n    &where=`{\\\"name\\\":\\\"[[+pattern_name]]\\\",\\\"parent\\\":\\\"0\\\"}`\\n]]\",\"lang\":\"html\",\"field\":86,\"settings\":{\"label\":\"[[%romanesco.patterns.template_label]]\"}}],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-95\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"<p>[[+[[+cf]].description]]<\/p>\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-96\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.usage_title]]\",\"fieldId\":\"contentblocks-field-98\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-99\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.settings_title]]\",\"fieldId\":\"contentblocks-field-101\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"[[+[[+cf]].settings_json]]\",\"lang\":\"json\",\"field\":83,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-102\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-104\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.included_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":84,\"settings\":{\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[{\"value\":\"[[%romanesco.patterns.referring_pages]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringPatterns\",\"pattern_template\":\"[[+pattern_template]]\",\"pattern_name\":\"[[+pattern_name]]\"}}]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-105\"}}],\"field\":76,\"settings\":{\"layout_type\":\"tabs\",\"accordion_type\":\"\",\"tab_type\":\"regular\",\"padding\":\"padded\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"six\",\"alignment\":\"\",\"pattern_name\":\"JSON to HTML\",\"pattern_template\":\"patternLayoutBosonField\"},\"parent\":0,\"title\":\"\"},{\"layout\":17,\"content\":{\"preview\":[{\"chunk_properties\":{},\"field\":84,\"settings\":{\"pattern_list\":\"includedPatterns\",\"pattern_template\":\"[[+pattern_template]]\",\"pattern_name\":\"[[+pattern_name]]\"}}],\"code\":[{\"value\":\"[[Rowboat?\\n    &table=`modx_contentblocks_field`\\n    &tpl=`displayRawTemplate`\\n    &where=`{\\\"name\\\":\\\"[[+pattern_name]]\\\",\\\"parent\\\":\\\"0\\\"}`\\n]]\",\"lang\":\"html\",\"field\":86,\"settings\":{\"label\":\"[[%romanesco.patterns.template_label]]\"}}],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-113\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"<p>[[+[[+cf]].description]]<\/p>\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-114\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.usage_title]]\",\"fieldId\":\"contentblocks-field-116\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-117\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.settings_title]]\",\"fieldId\":\"contentblocks-field-119\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"[[+[[+cf]].settings_json]]\",\"lang\":\"json\",\"field\":83,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-120\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-122\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.included_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":84,\"settings\":{\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[{\"value\":\"[[%romanesco.patterns.referring_pages]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringPatterns\",\"pattern_template\":\"[[+pattern_template]]\",\"pattern_name\":\"[[+pattern_name]]\"}}]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-123\"}}],\"field\":76,\"settings\":{\"layout_type\":\"tabs\",\"accordion_type\":\"\",\"tab_type\":\"regular\",\"padding\":\"padded\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"six\",\"alignment\":\"\",\"pattern_name\":\"Included Patterns\",\"pattern_template\":\"patternLayoutBosonField\"},\"parent\":0,\"title\":\"\"},{\"layout\":17,\"content\":{\"preview\":[],\"code\":[{\"value\":\"[[Rowboat?\\n    &table=`modx_contentblocks_field`\\n    &tpl=`displayRawTemplate`\\n    &where=`{\\\"name\\\":\\\"[[+pattern_name]]\\\",\\\"parent\\\":\\\"0\\\"}`\\n]]\",\"lang\":\"html\",\"field\":86,\"settings\":{\"label\":\"[[%romanesco.patterns.template_label]]\"}}],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-132\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"<p>[[+[[+cf]].description]]<\/p>\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-133\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.usage_title]]\",\"fieldId\":\"contentblocks-field-135\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-136\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.settings_title]]\",\"fieldId\":\"contentblocks-field-138\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"[[+[[+cf]].settings_json]]\",\"lang\":\"json\",\"field\":83,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-139\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-141\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.included_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":84,\"settings\":{\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[{\"value\":\"[[%romanesco.patterns.referring_pages]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringPatterns\",\"pattern_template\":\"[[+pattern_template]]\",\"pattern_name\":\"[[+pattern_name]]\"}}]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-142\"}}],\"field\":76,\"settings\":{\"layout_type\":\"tabs\",\"accordion_type\":\"\",\"tab_type\":\"regular\",\"padding\":\"padded\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"six\",\"alignment\":\"\",\"pattern_name\":\"Referring Patterns\",\"pattern_template\":\"patternLayoutBosonField\"},\"parent\":0,\"title\":\"\"}]","linear":[{"value":"An h1 header============Paragraphs are separated by a blank line.2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized listslook like:  * this one  * that one  * the other oneNote that --- not considering the asterisk --- the actual textcontent starts at 4-columns in.> Block quotes are> written like so.","field":72,"settings":[]},{"value":"[[Rowboat?\n    &table=`modx_contentblocks_field`\n    &tpl=`displayRawTemplate`\n    &where=`{\"name\":\"[[+pattern_name]]\",\"parent\":\"0\"}`\n]]","lang":"html","field":86,"settings":{"label":"[[%romanesco.patterns.template_label]]"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-4"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"<p>[[+[[+cf]].description]]<\/p>","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-5"}},{"heading":{"value":"[[%romanesco.patterns.usage_title]]","fieldId":"contentblocks-field-7"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-8"}},{"heading":{"value":"[[%romanesco.patterns.settings_title]]","fieldId":"contentblocks-field-10"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"[[+[[+cf]].settings_json]]","lang":"json","field":83,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-11"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-13"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.included_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":84,"settings":{"pattern_name":"[[+pattern_name]]"}}],"col_2":[{"value":"[[%romanesco.patterns.referring_pages]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringPatterns","pattern_template":"[[+pattern_template]]","pattern_name":"[[+pattern_name]]"}}]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-14"}}],"field":76,"settings":{"layout_type":"tabs","accordion_type":"","tab_type":"regular","padding":"padded"}},{"value":"<?php\n$count = 0;\n$parent = isset($parent) ? (integer) $parent : 0;\nif ($parent > 0) {\n    $criteria = array(\n        ''parent'' => $parent,\n        ''deleted'' => false,\n        ''published'' => true,\n    );\n    $count = $modx->getCount(''modResource'', $criteria);\n}\nreturn (string) $count;","lang":"php","field":13,"settings":{"label":"Example"}},{"value":"[[Rowboat?\n    &table=`modx_contentblocks_field`\n    &tpl=`displayRawTemplate`\n    &where=`{\"name\":\"[[+pattern_name]]\",\"parent\":\"0\"}`\n]]","lang":"html","field":86,"settings":{"label":"[[%romanesco.patterns.template_label]]"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-22"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"<p>[[+[[+cf]].description]]<\/p>","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-23"}},{"heading":{"value":"[[%romanesco.patterns.usage_title]]","fieldId":"contentblocks-field-25"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-26"}},{"heading":{"value":"[[%romanesco.patterns.settings_title]]","fieldId":"contentblocks-field-28"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"[[+[[+cf]].settings_json]]","lang":"json","field":83,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-29"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-31"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.included_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":84,"settings":{"pattern_name":"[[+pattern_name]]"}}],"col_2":[{"value":"[[%romanesco.patterns.referring_pages]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringPatterns","pattern_template":"[[+pattern_template]]","pattern_name":"[[+pattern_name]]"}}]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-32"}}],"field":76,"settings":{"layout_type":"tabs","accordion_type":"","tab_type":"regular","padding":"padded"}},{"value":"Child count for [[#[[*parent]].menutitle]]: [[getChildCount? &parent=`[[*parent]]`]]","lang":"html","field":86,"settings":{"label":"Example"}},{"value":"[[Rowboat?\n    &table=`modx_contentblocks_field`\n    &tpl=`displayRawTemplate`\n    &where=`{\"name\":\"[[+pattern_name]]\",\"parent\":\"0\"}`\n]]","lang":"html","field":86,"settings":{"label":"[[%romanesco.patterns.template_label]]"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-40"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"<p>[[+[[+cf]].description]]<\/p>","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-41"}},{"heading":{"value":"[[%romanesco.patterns.usage_title]]","fieldId":"contentblocks-field-43"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-44"}},{"heading":{"value":"[[%romanesco.patterns.settings_title]]","fieldId":"contentblocks-field-46"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"[[+[[+cf]].settings_json]]","lang":"json","field":83,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-47"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-49"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.included_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":84,"settings":{"pattern_name":"[[+pattern_name]]"}}],"col_2":[{"value":"[[%romanesco.patterns.referring_pages]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringPatterns","pattern_template":"[[+pattern_template]]","pattern_name":"[[+pattern_name]]"}}]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-50"}}],"field":76,"settings":{"layout_type":"tabs","accordion_type":"","tab_type":"regular","padding":"padded"}},{"value":"<div class=\"ui vertical steps\">\n    <div class=\"completed step\">\n        <i class=\"truck icon\"><\/i>\n        <div class=\"content\">\n            <div class=\"title\">Shipping<\/div>\n            <div class=\"description\">Choose your shipping options<\/div>\n        <\/div>\n    <\/div>\n    <div class=\"completed step\">\n        <i class=\"credit card icon\"><\/i>\n        <div class=\"content\">\n            <div class=\"title\">Billing<\/div>\n            <div class=\"description\">Enter billing information<\/div>\n        <\/div>\n    <\/div>\n    <div class=\"active step\">\n        <i class=\"info icon\"><\/i>\n        <div class=\"content\">\n            <div class=\"title\">Confirm Order<\/div>\n            <div class=\"description\">Verify order details<\/div>\n        <\/div>\n    <\/div>\n<\/div>","lang":"html","field":14,"settings":{"render_tag":"ignore"}},{"value":"[[Rowboat?\n    &table=`modx_contentblocks_field`\n    &tpl=`displayRawTemplate`\n    &where=`{\"name\":\"[[+pattern_name]]\",\"parent\":\"0\"}`\n]]","lang":"html","field":86,"settings":{"label":"[[%romanesco.patterns.template_label]]"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-58"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"<p>[[+[[+cf]].description]]<\/p>","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-59"}},{"heading":{"value":"[[%romanesco.patterns.usage_title]]","fieldId":"contentblocks-field-61"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-62"}},{"heading":{"value":"[[%romanesco.patterns.settings_title]]","fieldId":"contentblocks-field-64"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"[[+[[+cf]].settings_json]]","lang":"json","field":83,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-65"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-67"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.included_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":84,"settings":{"pattern_name":"[[+pattern_name]]"}}],"col_2":[{"value":"[[%romanesco.patterns.referring_pages]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringPatterns","pattern_template":"[[+pattern_template]]","pattern_name":"[[+pattern_name]]"}}]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-68"}}],"field":76,"settings":{"layout_type":"tabs","accordion_type":"","tab_type":"regular","padding":"padded"}},{"snippet":"pdoMenu","snippet_properties":{"parents":"[[*parent]]","limit":"4","tplOuter":"@INLINE <div class=\"ui bulleted list\">[[+wrapper]]<\/div>","tpl":"navItem"},"uncached":"","field":16,"settings":[]},{"value":"[[Rowboat?\n    &table=`modx_contentblocks_field`\n    &tpl=`displayRawTemplate`\n    &where=`{\"name\":\"[[+pattern_name]]\",\"parent\":\"0\"}`\n]]","lang":"html","field":86,"settings":{"label":"[[%romanesco.patterns.template_label]]"}},{"value":"[[+[[+cf]].wrapper_template]]","lang":"html","field":86,"settings":{"label":"[[%romanesco.patterns.template_wrapper_label]]"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-77"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"<p>[[+[[+cf]].description]]<\/p>","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-78"}},{"heading":{"value":"[[%romanesco.patterns.usage_title]]","fieldId":"contentblocks-field-80"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-81"}},{"heading":{"value":"[[%romanesco.patterns.settings_title]]","fieldId":"contentblocks-field-83"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"[[+[[+cf]].settings_json]]","lang":"json","field":83,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-84"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-86"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.included_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":84,"settings":{"pattern_name":"[[+pattern_name]]"}}],"col_2":[{"value":"[[%romanesco.patterns.referring_pages]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringPatterns","pattern_template":"[[+pattern_template]]","pattern_name":"[[+pattern_name]]"}}]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-87"}}],"field":76,"settings":{"layout_type":"tabs","accordion_type":"","tab_type":"regular","padding":"padded"}},{"value":"{\n    \"pagetitle\": \"08 - Fields - Advanced\",\n    \"alias\": \"advanced\",\n    \"menutitle\": \"Advanced\",\n    \"parent\": \"08 - Fields\",\n    \"context_key\": \"hub\",\n    \"template\": \"BasicDetail\",\n    \"published\": \"1\"\n}","lang":"json","field":83,"settings":[]},{"value":"[[Rowboat?\n    &table=`modx_contentblocks_field`\n    &tpl=`displayRawTemplate`\n    &where=`{\"name\":\"[[+pattern_name]]\",\"parent\":\"0\"}`\n]]","lang":"html","field":86,"settings":{"label":"[[%romanesco.patterns.template_label]]"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-95"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"<p>[[+[[+cf]].description]]<\/p>","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-96"}},{"heading":{"value":"[[%romanesco.patterns.usage_title]]","fieldId":"contentblocks-field-98"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-99"}},{"heading":{"value":"[[%romanesco.patterns.settings_title]]","fieldId":"contentblocks-field-101"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"[[+[[+cf]].settings_json]]","lang":"json","field":83,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-102"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-104"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.included_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":84,"settings":{"pattern_name":"[[+pattern_name]]"}}],"col_2":[{"value":"[[%romanesco.patterns.referring_pages]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringPatterns","pattern_template":"[[+pattern_template]]","pattern_name":"[[+pattern_name]]"}}]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-105"}}],"field":76,"settings":{"layout_type":"tabs","accordion_type":"","tab_type":"regular","padding":"padded"}},{"chunk_properties":[],"field":84,"settings":{"pattern_list":"includedPatterns","pattern_template":"[[+pattern_template]]","pattern_name":"[[+pattern_name]]"}},{"value":"[[Rowboat?\n    &table=`modx_contentblocks_field`\n    &tpl=`displayRawTemplate`\n    &where=`{\"name\":\"[[+pattern_name]]\",\"parent\":\"0\"}`\n]]","lang":"html","field":86,"settings":{"label":"[[%romanesco.patterns.template_label]]"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-113"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"<p>[[+[[+cf]].description]]<\/p>","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-114"}},{"heading":{"value":"[[%romanesco.patterns.usage_title]]","fieldId":"contentblocks-field-116"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-117"}},{"heading":{"value":"[[%romanesco.patterns.settings_title]]","fieldId":"contentblocks-field-119"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"[[+[[+cf]].settings_json]]","lang":"json","field":83,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-120"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-122"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.included_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":84,"settings":{"pattern_name":"[[+pattern_name]]"}}],"col_2":[{"value":"[[%romanesco.patterns.referring_pages]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringPatterns","pattern_template":"[[+pattern_template]]","pattern_name":"[[+pattern_name]]"}}]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-123"}}],"field":76,"settings":{"layout_type":"tabs","accordion_type":"","tab_type":"regular","padding":"padded"}},{"value":"[[Rowboat?\n    &table=`modx_contentblocks_field`\n    &tpl=`displayRawTemplate`\n    &where=`{\"name\":\"[[+pattern_name]]\",\"parent\":\"0\"}`\n]]","lang":"html","field":86,"settings":{"label":"[[%romanesco.patterns.template_label]]"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-132"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"<p>[[+[[+cf]].description]]<\/p>","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-133"}},{"heading":{"value":"[[%romanesco.patterns.usage_title]]","fieldId":"contentblocks-field-135"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-136"}},{"heading":{"value":"[[%romanesco.patterns.settings_title]]","fieldId":"contentblocks-field-138"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"[[+[[+cf]].settings_json]]","lang":"json","field":83,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-139"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-141"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.included_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":84,"settings":{"pattern_name":"[[+pattern_name]]"}}],"col_2":[{"value":"[[%romanesco.patterns.referring_pages]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringPatterns","pattern_template":"[[+pattern_template]]","pattern_name":"[[+pattern_name]]"}}]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-142"}}],"field":76,"settings":{"layout_type":"tabs","accordion_type":"","tab_type":"regular","padding":"padded"}}],"fieldcounts":{"72":1,"86":10,"76":8,"13":1,"14":1,"16":1,"83":1,"84":1},"_isContentBlocks":true}}'
+tvs:
+    header_background: '@INHERIT'
+    header_background_img: ''
+    header_cta: '@INHERIT'
+    header_inheritance: '@INHERIT inherit_titles||inherit_background'
+    header_subtitle: '@INHERIT'
+    header_title: '@INHERIT'
+    overview_icon_font: ''
+    overview_icon_svg: ''
+    overview_img_landscape: ''
+    overview_img_pano: ''
+    overview_img_portrait: ''
+    overview_img_priority: landscape
+    overview_img_square: ''
+    overview_img_wide: ''
+    overview_link_text: ''
+    status_assigned_user: ''
+    status_help: ''
+    status_improvements: ''
+    status_indicator: not-done
+    status_notes: ''
+
+-----
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutBosonField`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`Markdown Text` &prefix=`cf_1_1402``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutBosonField`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`Markdown Text` &prefix=`cl_1_1402``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_1_1402`?
+            &preview=`[[$richTextSegment?
+    &content=`<p>An h1 header============Paragraphs are separated by a blank line.2nd paragraph. <em>Italic</em>, <strong>bold</strong>, and <code>monospace</code>. Itemized listslook like:  <em> this one  </em> that one  * the other oneNote that --- not considering the asterisk --- the actual textcontent starts at 4-columns in.&gt; Block quotes are&gt; written like so.</p>`
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]`
+            &code=`[[$codeSnippet?
+    &value=`[[Rowboat?
+    &table=`modx_contentblocks_field`
+    &tpl=`displayRawTemplate`
+    &where=`{"name":"Markdown Text","parent":"0"}`
+]]`
+    &lang=`html`
+    &label=`[[%romanesco.patterns.template_label]]`
+]]`
+            &sidebar_width=`six`
+            &pattern_name=`Markdown Text`
+            &pattern_template=`patternLayoutBosonField`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`1`
+            &unique_idx=`1402`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutBosonField`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`Markdown Text`
+                    &pattern_status=`orange`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`Markdown Text`
+                    &pattern_template=`patternLayoutBosonField`
+                    &pattern_status=`orange`
+                    &idx=`1`
+                    &unique_idx=`1402`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutBosonField`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_1_1402`
+        ]]]]
+
+        [[$tabsOuter?
+    &rows=`[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=`<p>[[+[[+cf]].description]]</p>`
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.usage_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.settings_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[jsonToHTML? &json=`[[+[[+cf]].settings_json]]`]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.included_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`1397`
+]]
+
+[[$includedPatternsOuter? 
+	&unique_idx=`1398`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`includedPatterns`
+	&pattern_template=`patternLayoutBosonField`
+	&pattern_name=`Markdown Text`
+	]]
+</div>
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_pages]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`1399`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`1400`
+	&layout_id=`12`
+	&layout_column=`col_2`
+	&layout_idx=`0`
+	&pattern_list=`referringPatterns`
+	&pattern_template=`patternLayoutBosonField`
+	&pattern_name=`Markdown Text`
+	]]
+</div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`4`
+]]`
+    &total=`4`
+    &padding=`padded`
+    &accordion_type=``
+    &tab_type=`regular`
+    &unique_idx=`1390`
+]]
+    </div>
+</div>
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutBosonField`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`Code (Display)` &prefix=`cf_2_1417``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutBosonField`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`Code (Display)` &prefix=`cl_2_1417``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_2_1417`?
+            &preview=`<pre><code class="language-php">&lt;?php
+$count = 0;
+$parent = isset($parent) ? (integer) $parent : 0;
+if ($parent &gt; 0) {
+    $criteria = array(
+        'parent' =&gt; $parent,
+        'deleted' =&gt; false,
+        'published' =&gt; true,
+    );
+    $count = $modx-&gt;getCount('modResource', $criteria);
+}
+return (string) $count;</code><div class="ui small top right attached label">Example<i class="copy link icon with popup" data-content="[[%romanesco.patterns.copy_tooltip]]"></i></div></pre>`
+            &code=`[[$codeSnippet?
+    &value=`[[Rowboat?
+    &table=`modx_contentblocks_field`
+    &tpl=`displayRawTemplate`
+    &where=`{"name":"Code (Display)","parent":"0"}`
+]]`
+    &lang=`html`
+    &label=`[[%romanesco.patterns.template_label]]`
+]]`
+            &sidebar_width=`six`
+            &pattern_name=`Code (Display)`
+            &pattern_template=`patternLayoutBosonField`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`2`
+            &unique_idx=`1417`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutBosonField`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`Code (Display)`
+                    &pattern_status=`green`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`Code (Display)`
+                    &pattern_template=`patternLayoutBosonField`
+                    &pattern_status=`green`
+                    &idx=`2`
+                    &unique_idx=`1417`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutBosonField`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_2_1417`
+        ]]]]
+
+        [[$tabsOuter?
+    &rows=`[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=`<p>[[+[[+cf]].description]]</p>`
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.usage_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.settings_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[jsonToHTML? &json=`[[+[[+cf]].settings_json]]`]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.included_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`1412`
+]]
+
+[[$includedPatternsOuter? 
+	&unique_idx=`1413`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`includedPatterns`
+	&pattern_template=`patternLayoutBosonField`
+	&pattern_name=`Code (Display)`
+	]]
+</div>
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_pages]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`1414`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`1415`
+	&layout_id=`12`
+	&layout_column=`col_2`
+	&layout_idx=`0`
+	&pattern_list=`referringPatterns`
+	&pattern_template=`patternLayoutBosonField`
+	&pattern_name=`Code (Display)`
+	]]
+</div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`4`
+]]`
+    &total=`4`
+    &padding=`padded`
+    &accordion_type=``
+    &tab_type=`regular`
+    &unique_idx=`1405`
+]]
+    </div>
+</div>
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutBosonField`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`Code (Execute)` &prefix=`cf_3_1432``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutBosonField`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`Code (Execute)` &prefix=`cl_3_1432``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_3_1432`?
+            &preview=`[[$codeSnippet?
+    &value=`Child count for [[#[[*parent]].menutitle]]: [[getChildCount? &parent=`[[*parent]]`]]`
+    &lang=`html`
+    &label=`Example`
+]]`
+            &code=`[[$codeSnippet?
+    &value=`[[Rowboat?
+    &table=`modx_contentblocks_field`
+    &tpl=`displayRawTemplate`
+    &where=`{"name":"Code (Execute)","parent":"0"}`
+]]`
+    &lang=`html`
+    &label=`[[%romanesco.patterns.template_label]]`
+]]`
+            &sidebar_width=`six`
+            &pattern_name=`Code (Execute)`
+            &pattern_template=`patternLayoutBosonField`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`3`
+            &unique_idx=`1432`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutBosonField`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`Code (Execute)`
+                    &pattern_status=`green`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`Code (Execute)`
+                    &pattern_template=`patternLayoutBosonField`
+                    &pattern_status=`green`
+                    &idx=`3`
+                    &unique_idx=`1432`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutBosonField`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_3_1432`
+        ]]]]
+
+        [[$tabsOuter?
+    &rows=`[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=`<p>[[+[[+cf]].description]]</p>`
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.usage_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.settings_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[jsonToHTML? &json=`[[+[[+cf]].settings_json]]`]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.included_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`1427`
+]]
+
+[[$includedPatternsOuter? 
+	&unique_idx=`1428`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`includedPatterns`
+	&pattern_template=`patternLayoutBosonField`
+	&pattern_name=`Code (Execute)`
+	]]
+</div>
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_pages]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`1429`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`1430`
+	&layout_id=`12`
+	&layout_column=`col_2`
+	&layout_idx=`0`
+	&pattern_list=`referringPatterns`
+	&pattern_template=`patternLayoutBosonField`
+	&pattern_name=`Code (Execute)`
+	]]
+</div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`4`
+]]`
+    &total=`4`
+    &padding=`padded`
+    &accordion_type=``
+    &tab_type=`regular`
+    &unique_idx=`1420`
+]]
+    </div>
+</div>
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutBosonField`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`HTML Code` &prefix=`cf_4_1447``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutBosonField`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`HTML Code` &prefix=`cl_4_1447``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_4_1447`?
+            &preview=`[[!cbRenderCodeField?
+    &valueRendered=`<div class="ui vertical steps">
+    <div class="completed step">
+        <i class="truck icon"></i>
+        <div class="content">
+            <div class="title">Shipping</div>
+            <div class="description">Choose your shipping options</div>
+        </div>
+    </div>
+    <div class="completed step">
+        <i class="credit card icon"></i>
+        <div class="content">
+            <div class="title">Billing</div>
+            <div class="description">Enter billing information</div>
+        </div>
+    </div>
+    <div class="active step">
+        <i class="info icon"></i>
+        <div class="content">
+            <div class="title">Confirm Order</div>
+            <div class="description">Verify order details</div>
+        </div>
+    </div>
+</div>`
+    &valueRaw=`<div class="ui vertical steps">
+    <div class="completed step">
+        <i class="truck icon"></i>
+        <div class="content">
+            <div class="title">Shipping</div>
+            <div class="description">Choose your shipping options</div>
+        </div>
+    </div>
+    <div class="completed step">
+        <i class="credit card icon"></i>
+        <div class="content">
+            <div class="title">Billing</div>
+            <div class="description">Enter billing information</div>
+        </div>
+    </div>
+    <div class="active step">
+        <i class="info icon"></i>
+        <div class="content">
+            <div class="title">Confirm Order</div>
+            <div class="description">Verify order details</div>
+        </div>
+    </div>
+</div>`
+    &renderTag=`ignore`
+]]`
+            &code=`[[$codeSnippet?
+    &value=`[[Rowboat?
+    &table=`modx_contentblocks_field`
+    &tpl=`displayRawTemplate`
+    &where=`{"name":"HTML Code","parent":"0"}`
+]]`
+    &lang=`html`
+    &label=`[[%romanesco.patterns.template_label]]`
+]]`
+            &sidebar_width=`six`
+            &pattern_name=`HTML Code`
+            &pattern_template=`patternLayoutBosonField`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`4`
+            &unique_idx=`1447`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutBosonField`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`HTML Code`
+                    &pattern_status=`green`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`HTML Code`
+                    &pattern_template=`patternLayoutBosonField`
+                    &pattern_status=`green`
+                    &idx=`4`
+                    &unique_idx=`1447`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutBosonField`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_4_1447`
+        ]]]]
+
+        [[$tabsOuter?
+    &rows=`[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=`<p>[[+[[+cf]].description]]</p>`
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.usage_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.settings_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[jsonToHTML? &json=`[[+[[+cf]].settings_json]]`]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.included_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`1442`
+]]
+
+[[$includedPatternsOuter? 
+	&unique_idx=`1443`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`includedPatterns`
+	&pattern_template=`patternLayoutBosonField`
+	&pattern_name=`HTML Code`
+	]]
+</div>
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_pages]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`1444`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`1445`
+	&layout_id=`12`
+	&layout_column=`col_2`
+	&layout_idx=`0`
+	&pattern_list=`referringPatterns`
+	&pattern_template=`patternLayoutBosonField`
+	&pattern_name=`HTML Code`
+	]]
+</div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`4`
+]]`
+    &total=`4`
+    &padding=`padded`
+    &accordion_type=``
+    &tab_type=`regular`
+    &unique_idx=`1435`
+]]
+    </div>
+</div>
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutBosonField`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`Snippet` &prefix=`cf_5_1463``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutBosonField`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`Snippet` &prefix=`cl_5_1463``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_5_1463`?
+            &preview=`[[pdoMenu? 
+	&parents=`[[*parent]]`
+	&limit=`4`
+	&tplOuter=`@INLINE <div class="ui bulleted list">[[+wrapper]]</div>`
+	&tpl=`navItem`
+	&unique_idx=`1448`
+	&layout_id=`17`
+	&layout_column=`preview`
+	
+	]]
+`
+            &code=`[[$codeSnippet?
+    &value=`[[Rowboat?
+    &table=`modx_contentblocks_field`
+    &tpl=`displayRawTemplate`
+    &where=`{"name":"Snippet","parent":"0"}`
+]]`
+    &lang=`html`
+    &label=`[[%romanesco.patterns.template_label]]`
+]]
+
+[[$codeSnippet?
+    &value=`[[+[[+cf]].wrapper_template]]`
+    &lang=`html`
+    &label=`[[%romanesco.patterns.template_wrapper_label]]`
+]]`
+            &sidebar_width=`six`
+            &pattern_name=`Snippet`
+            &pattern_template=`patternLayoutBosonField`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`5`
+            &unique_idx=`1463`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutBosonField`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`Snippet`
+                    &pattern_status=`green`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`Snippet`
+                    &pattern_template=`patternLayoutBosonField`
+                    &pattern_status=`green`
+                    &idx=`5`
+                    &unique_idx=`1463`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutBosonField`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_5_1463`
+        ]]]]
+
+        [[$tabsOuter?
+    &rows=`[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=`<p>[[+[[+cf]].description]]</p>`
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.usage_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.settings_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[jsonToHTML? &json=`[[+[[+cf]].settings_json]]`]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.included_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`1458`
+]]
+
+[[$includedPatternsOuter? 
+	&unique_idx=`1459`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`includedPatterns`
+	&pattern_template=`patternLayoutBosonField`
+	&pattern_name=`Snippet`
+	]]
+</div>
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_pages]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`1460`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`1461`
+	&layout_id=`12`
+	&layout_column=`col_2`
+	&layout_idx=`0`
+	&pattern_list=`referringPatterns`
+	&pattern_template=`patternLayoutBosonField`
+	&pattern_name=`Snippet`
+	]]
+</div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`4`
+]]`
+    &total=`4`
+    &padding=`padded`
+    &accordion_type=``
+    &tab_type=`regular`
+    &unique_idx=`1451`
+]]
+    </div>
+</div>
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutBosonField`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`JSON to HTML` &prefix=`cf_6_1478``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutBosonField`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`JSON to HTML` &prefix=`cl_6_1478``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_6_1478`?
+            &preview=`[[jsonToHTML? &json=`{
+    "pagetitle": "08 - Fields - Advanced",
+    "alias": "advanced",
+    "menutitle": "Advanced",
+    "parent": "08 - Fields",
+    "context_key": "hub",
+    "template": "BasicDetail",
+    "published": "1"
+}`]]`
+            &code=`[[$codeSnippet?
+    &value=`[[Rowboat?
+    &table=`modx_contentblocks_field`
+    &tpl=`displayRawTemplate`
+    &where=`{"name":"JSON to HTML","parent":"0"}`
+]]`
+    &lang=`html`
+    &label=`[[%romanesco.patterns.template_label]]`
+]]`
+            &sidebar_width=`six`
+            &pattern_name=`JSON to HTML`
+            &pattern_template=`patternLayoutBosonField`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`6`
+            &unique_idx=`1478`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutBosonField`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`JSON to HTML`
+                    &pattern_status=`green`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`JSON to HTML`
+                    &pattern_template=`patternLayoutBosonField`
+                    &pattern_status=`green`
+                    &idx=`6`
+                    &unique_idx=`1478`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutBosonField`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_6_1478`
+        ]]]]
+
+        [[$tabsOuter?
+    &rows=`[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=`<p>[[+[[+cf]].description]]</p>`
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.usage_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.settings_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[jsonToHTML? &json=`[[+[[+cf]].settings_json]]`]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.included_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`1473`
+]]
+
+[[$includedPatternsOuter? 
+	&unique_idx=`1474`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`includedPatterns`
+	&pattern_template=`patternLayoutBosonField`
+	&pattern_name=`JSON to HTML`
+	]]
+</div>
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_pages]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`1475`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`1476`
+	&layout_id=`12`
+	&layout_column=`col_2`
+	&layout_idx=`0`
+	&pattern_list=`referringPatterns`
+	&pattern_template=`patternLayoutBosonField`
+	&pattern_name=`JSON to HTML`
+	]]
+</div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`4`
+]]`
+    &total=`4`
+    &padding=`padded`
+    &accordion_type=``
+    &tab_type=`regular`
+    &unique_idx=`1466`
+]]
+    </div>
+</div>
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutBosonField`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`Included Patterns` &prefix=`cf_7_1493``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutBosonField`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`Included Patterns` &prefix=`cl_7_1493``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_7_1493`?
+            &preview=`[[$includedPatternsOuter? 
+	&unique_idx=`1479`
+	&layout_id=`17`
+	&layout_column=`preview`
+	&layout_idx=`6`
+	&pattern_list=`includedPatterns`
+	&pattern_template=`patternLayoutBosonField`
+	&pattern_name=`Included Patterns`
+	]]
+`
+            &code=`[[$codeSnippet?
+    &value=`[[Rowboat?
+    &table=`modx_contentblocks_field`
+    &tpl=`displayRawTemplate`
+    &where=`{"name":"Included Patterns","parent":"0"}`
+]]`
+    &lang=`html`
+    &label=`[[%romanesco.patterns.template_label]]`
+]]`
+            &sidebar_width=`six`
+            &pattern_name=`Included Patterns`
+            &pattern_template=`patternLayoutBosonField`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`7`
+            &unique_idx=`1493`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutBosonField`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`Included Patterns`
+                    &pattern_status=`green`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`Included Patterns`
+                    &pattern_template=`patternLayoutBosonField`
+                    &pattern_status=`green`
+                    &idx=`7`
+                    &unique_idx=`1493`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutBosonField`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_7_1493`
+        ]]]]
+
+        [[$tabsOuter?
+    &rows=`[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=`<p>[[+[[+cf]].description]]</p>`
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.usage_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.settings_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[jsonToHTML? &json=`[[+[[+cf]].settings_json]]`]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.included_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`1488`
+]]
+
+[[$includedPatternsOuter? 
+	&unique_idx=`1489`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`includedPatterns`
+	&pattern_template=`patternLayoutBosonField`
+	&pattern_name=`Included Patterns`
+	]]
+</div>
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_pages]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`1490`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`1491`
+	&layout_id=`12`
+	&layout_column=`col_2`
+	&layout_idx=`0`
+	&pattern_list=`referringPatterns`
+	&pattern_template=`patternLayoutBosonField`
+	&pattern_name=`Included Patterns`
+	]]
+</div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`4`
+]]`
+    &total=`4`
+    &padding=`padded`
+    &accordion_type=``
+    &tab_type=`regular`
+    &unique_idx=`1481`
+]]
+    </div>
+</div>
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutBosonField`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`Referring Patterns` &prefix=`cf_8_1507``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutBosonField`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`Referring Patterns` &prefix=`cl_8_1507``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_8_1507`?
+            &preview=``
+            &code=`[[$codeSnippet?
+    &value=`[[Rowboat?
+    &table=`modx_contentblocks_field`
+    &tpl=`displayRawTemplate`
+    &where=`{"name":"Referring Patterns","parent":"0"}`
+]]`
+    &lang=`html`
+    &label=`[[%romanesco.patterns.template_label]]`
+]]`
+            &sidebar_width=`six`
+            &pattern_name=`Referring Patterns`
+            &pattern_template=`patternLayoutBosonField`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`8`
+            &unique_idx=`1507`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutBosonField`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`Referring Patterns`
+                    &pattern_status=`green`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`Referring Patterns`
+                    &pattern_template=`patternLayoutBosonField`
+                    &pattern_status=`green`
+                    &idx=`8`
+                    &unique_idx=`1507`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutBosonField`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_8_1507`
+        ]]]]
+
+        [[$tabsOuter?
+    &rows=`[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=`<p>[[+[[+cf]].description]]</p>`
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.usage_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.settings_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[jsonToHTML? &json=`[[+[[+cf]].settings_json]]`]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.included_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`1502`
+]]
+
+[[$includedPatternsOuter? 
+	&unique_idx=`1503`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`includedPatterns`
+	&pattern_template=`patternLayoutBosonField`
+	&pattern_name=`Referring Patterns`
+	]]
+</div>
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_pages]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`1504`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`1505`
+	&layout_id=`12`
+	&layout_column=`col_2`
+	&layout_idx=`0`
+	&pattern_list=`referringPatterns`
+	&pattern_template=`patternLayoutBosonField`
+	&pattern_name=`Referring Patterns`
+	]]
+</div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`4`
+]]`
+    &total=`4`
+    &padding=`padded`
+    &accordion_type=``
+    &tab_type=`regular`
+    &unique_idx=`1495`
+]]
+    </div>
+</div>

@@ -1,0 +1,194 @@
+id: 82
+pagetitle: '03 - Social'
+longtitle: 'Wrappers for social buttons and feeds'
+alias: social
+published: 1
+parent: 16
+introtext: ''
+template: 2
+menuindex: 8
+createdby: 1
+createdon: 1500991101
+publishedon: 1500991101
+publishedby: 1
+menutitle: Social
+context_key: hub
+uri: patterns/organisms/social
+properties: '{"contentblocks":{"content":"[{\"layout\":17,\"content\":{\"preview\":[{\"value\":\"[[$twitterFeedOuter:tag?\\n    &cols=`1`\\n]]\",\"lang\":\"html\",\"field\":14,\"settings\":{\"render_tag\":\"render\"}}],\"code\":[{\"value\":\"[[Rowboat?\\n    &table=`modx_site_htmlsnippets`\\n    &tpl=`displayRawElement`\\n    &where=`{\\\"name\\\":\\\"[[+pattern_name]]\\\"}`\\n]]\",\"lang\":\"html\",\"field\":86,\"settings\":{\"label\":\"[[%romanesco.patterns.code_label]]\"}}],\"info\":[{\"rows\":[{\"heading\":{\"value\":\"[[%romanesco.patterns.purpose_title]]\",\"fieldId\":\"contentblocks-field-5\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"<p>[[getElementDescription? &name=`[[+pattern_name]]` &type=`[[+pattern_template]]`]]\\n<\/p>\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-6\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.usage_title]]\",\"fieldId\":\"contentblocks-field-8\"},\"content\":{\"child_layouts\":[{\"layout\":7,\"content\":{\"main\":[{\"value\":\"\",\"field\":6,\"settings\":[]}]},\"settings\":[],\"parent\":78}],\"fieldId\":\"contentblocks-field-9\"}},{\"heading\":{\"value\":\"[[%romanesco.patterns.references_title]]\",\"fieldId\":\"contentblocks-field-11\"},\"content\":{\"child_layouts\":[{\"layout\":12,\"content\":{\"col_1\":[{\"value\":\"[[%romanesco.patterns.included_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":84,\"settings\":{\"pattern_list\":\"includedChunks,includedSnippets,includedTVs\",\"pattern_name\":\"[[+pattern_name]]\"}}],\"col_2\":[{\"value\":\"[[%romanesco.patterns.referring_patterns]]\",\"level\":\"h5\",\"field\":1,\"settings\":[]},{\"chunk_properties\":{},\"field\":85,\"settings\":{\"pattern_list\":\"referringChunks,referringSnippets,referringTemplates\",\"pattern_name\":\"[[+pattern_name]]\"}}]},\"settings\":{\"padding\":\"relaxed\",\"alignment\":\"\",\"divider\":\"divided\"},\"parent\":78}],\"fieldId\":\"contentblocks-field-12\"}}],\"field\":76,\"settings\":{\"layout_type\":\"tabs\",\"accordion_type\":\"\",\"tab_type\":\"regular\",\"padding\":\"padded\"}}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"sidebar_width\":\"five\",\"alignment\":\"\",\"pattern_name\":\"twitterFeedOuter\",\"pattern_template\":\"patternLayoutOrganism\"},\"parent\":0,\"title\":\"\"}]","linear":[{"value":"[[$twitterFeedOuter:tag?\n    &cols=`1`\n]]","lang":"html","field":14,"settings":{"render_tag":"render"}},{"value":"[[Rowboat?\n    &table=`modx_site_htmlsnippets`\n    &tpl=`displayRawElement`\n    &where=`{\"name\":\"[[+pattern_name]]\"}`\n]]","lang":"html","field":86,"settings":{"label":"[[%romanesco.patterns.code_label]]"}},{"rows":[{"heading":{"value":"[[%romanesco.patterns.purpose_title]]","fieldId":"contentblocks-field-5"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"<p>[[getElementDescription? &name=`[[+pattern_name]]` &type=`[[+pattern_template]]`]]\n<\/p>","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-6"}},{"heading":{"value":"[[%romanesco.patterns.usage_title]]","fieldId":"contentblocks-field-8"},"content":{"child_layouts":[{"layout":7,"content":{"main":[{"value":"","field":6,"settings":[]}]},"settings":[],"parent":78}],"fieldId":"contentblocks-field-9"}},{"heading":{"value":"[[%romanesco.patterns.references_title]]","fieldId":"contentblocks-field-11"},"content":{"child_layouts":[{"layout":12,"content":{"col_1":[{"value":"[[%romanesco.patterns.included_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":84,"settings":{"pattern_list":"includedChunks,includedSnippets,includedTVs","pattern_name":"[[+pattern_name]]"}}],"col_2":[{"value":"[[%romanesco.patterns.referring_patterns]]","level":"h5","field":1,"settings":[]},{"chunk_properties":[],"field":85,"settings":{"pattern_list":"referringChunks,referringSnippets,referringTemplates","pattern_name":"[[+pattern_name]]"}}]},"settings":{"padding":"relaxed","alignment":"","divider":"divided"},"parent":78}],"fieldId":"contentblocks-field-12"}}],"field":76,"settings":{"layout_type":"tabs","accordion_type":"","tab_type":"regular","padding":"padded"}}],"fieldcounts":{"14":1,"86":1,"76":1},"_isContentBlocks":true}}'
+tvs:
+    header_background: '@INHERIT'
+    header_background_img: ''
+    header_cta: '@INHERIT'
+    header_inheritance: '@INHERIT inherit_titles||inherit_background'
+    header_subtitle: '@INHERIT'
+    header_title: '@INHERIT'
+    overview_icon_font: ''
+    overview_icon_svg: ''
+    overview_img_landscape: ''
+    overview_img_pano: ''
+    overview_img_portrait: ''
+    overview_img_priority: landscape
+    overview_img_square: ''
+    overview_img_wide: ''
+    overview_link_text: ''
+    status_assigned_user: ''
+    status_help: ''
+    status_improvements: ''
+    status_indicator: not-done
+    status_notes: ''
+
+-----
+
+<div class="ui vertical stripe pattern segment white">
+    <div class="ui   container">
+        [[[[If?
+            &subject=`patternLayoutOrganism`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonField`
+            &then=`setPatternPlaceholders? &cbField=`twitterFeedOuter` &prefix=`cf_1_4532``
+        ]]]]
+        [[[[If?
+            &subject=`patternLayoutOrganism`
+            &operator=`EQ`
+            &operand=`patternLayoutBosonLayout`
+            &then=`setPatternPlaceholders? &cbLayout=`twitterFeedOuter` &prefix=`cl_1_4532``
+        ]]]]
+
+        [[!$cbLayoutPatternPreview:toPlaceholder=`preview_1_4532`?
+            &preview=`[[!cbRenderCodeField?
+    &valueRendered=`[[$twitterFeedOuter?
+    &cols=`1`
+]]`
+    &valueRaw=`[[$twitterFeedOuter:tag?
+    &cols=`1`
+]]`
+    &renderTag=`render`
+]]`
+            &code=`[[$codeSnippet?
+    &value=`[[Rowboat?
+    &table=`modx_site_htmlsnippets`
+    &tpl=`displayRawElement`
+    &where=`{"name":"twitterFeedOuter"}`
+]]`
+    &lang=`html`
+    &label=`[[%romanesco.patterns.code_label]]`
+]]`
+            &sidebar_width=`five`
+            &pattern_name=`twitterFeedOuter`
+            &pattern_template=`patternLayoutOrganism`
+            &raw_tags=`[[+raw_tags]]`
+            &rendered_tags=`[[+rendered_tags]]`
+            &idx=`1`
+            &unique_idx=`4532`
+        ]]
+        
+        [[[[modifiedIf?
+            &subject=`patternLayoutOrganism`
+            &operator=`contains`
+            &operand=`Electron`
+            &then=`
+                $toolbarPatternElectron?
+                    &pattern_name=`twitterFeedOuter`
+                    &pattern_status=`green`
+                `
+            &else=`
+                $toolbarPattern?
+                    &pattern_name=`twitterFeedOuter`
+                    &pattern_template=`patternLayoutOrganism`
+                    &pattern_status=`green`
+                    &idx=`1`
+                    &unique_idx=`4532`
+                `
+        ]]]]
+
+        [[[[modifiedIf?
+            &subject=`patternLayoutOrganism`
+            &operator=`containsnot`
+            &operand=`Electron`
+            &then=`+preview_1_4532`
+        ]]]]
+
+        [[$tabsOuter?
+    &rows=`[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.purpose_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=`<p>[[getElementDescription? &name=`twitterFeedOuter` &type=`patternLayoutOrganism`]]
+</p>`
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`1`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.usage_title]]`
+    &content=`<div class="ui nested one column stackable doubling relaxed  grid">
+    <div class="column">[[$richTextSegment?
+    &content=``
+    &segment_type=``
+	&padding=`regular`
+    &alignment=``
+]]</div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`2`
+]]
+
+[[$tabsRowBasic?
+    &heading=`[[%romanesco.patterns.references_title]]`
+    &content=`<div class="ui nested two column stackable doubling relaxed  divided grid">
+    <div class="row">
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.included_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`4527`
+]]
+
+[[$includedPatternsOuter? 
+	&unique_idx=`4528`
+	&layout_id=`12`
+	&layout_column=`col_1`
+	&layout_idx=`0`
+	&pattern_list=`includedChunks,includedSnippets,includedTVs`
+	&pattern_template=`patternLayoutOrganism`
+	&pattern_name=`twitterFeedOuter`
+	]]
+</div>
+        <div class="column">[[$headingBasic?
+    &value=`[[%romanesco.patterns.referring_patterns]]`
+    &level=`h5`
+    &alignment=``
+    &unique_idx=`4529`
+]]
+
+[[$referringPatternsOuter? 
+	&unique_idx=`4530`
+	&layout_id=`12`
+	&layout_column=`col_2`
+	&layout_idx=`0`
+	&pattern_list=`referringChunks,referringSnippets,referringTemplates`
+	&pattern_template=`patternLayoutOrganism`
+	&pattern_name=`twitterFeedOuter`
+	]]
+</div>
+    </div>
+</div>`
+    &padding=`padded`
+    &tab_type=`regular`
+    &idx=`3`
+]]`
+    &total=`3`
+    &padding=`padded`
+    &accordion_type=``
+    &tab_type=`regular`
+    &unique_idx=`4522`
+]]
+    </div>
+</div>
