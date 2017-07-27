@@ -100,23 +100,23 @@ if ($svgToSymbol) {
 
 // For better accessibility, we inject a few extra properties into the SVG.
 // Because we all know what happens if we don't... (nothing)
-if ($a11y) {
-    // We'll create a new document, based on the cleaned SVG
-    $output = new DOMDocument();
-    $output->loadXML($cleanSVG, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+// if ($a11y) {
+//     // We'll create a new document, based on the cleaned SVG
+//     $output = new DOMDocument();
+//     $output->loadXML($cleanSVG, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
 
-    // For interpretation on screen readers, our SVG needs a title and some aria attributes
-    // See this pen for more details: https://codepen.io/NathanPJF/full/GJObGm
-    $titleID = pathinfo($file, PATHINFO_FILENAME);
-    $titleElement = $output->createElement('title', $title);
-    $titleElement->setAttribute('id', 'title-' . $titleID);
+//     // For interpretation on screen readers, our SVG needs a title and some aria attributes
+//     // See this pen for more details: https://codepen.io/NathanPJF/full/GJObGm
+//     $titleID = pathinfo($file, PATHINFO_FILENAME);
+//     $titleElement = $output->createElement('title', $title);
+//     $titleElement->setAttribute('id', 'title-' . $titleID);
 
-    $output->documentElement->appendChild($titleElement);
-    $output->documentElement->setAttribute('role', 'img');
-    $output->documentElement->setAttribute('aria-labelledby', 'title-' . $titleID);
+//     $output->documentElement->appendChild($titleElement);
+//     $output->documentElement->setAttribute('role', 'img');
+//     $output->documentElement->setAttribute('aria-labelledby', 'title-' . $titleID);
 
-    $cleanSVG = $output->saveHTML();
-}
+//     $cleanSVG = $output->saveHTML();
+// }
 
 // Cache the output we have at this point and then return it
 $cacheManager->set($cacheElementKey, $cleanSVG, $cacheLifetime, $cacheOptions);

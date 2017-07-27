@@ -7,21 +7,20 @@ template: 11
 menuindex: 1
 createdby: 1
 createdon: 1500991098
-publishedon: 1500991098
+publishedon: 1500991080
 publishedby: 1
 menutitle: Dashboard
 context_key: hub
 uri: dashboard
-properties: '{"contentblocks":{"content":"[{\"layout\":6,\"content\":{\"col_1\":[{\"value\":\"[[$projectHubOuter]]\",\"lang\":\"html\",\"field\":14,\"settings\":[]}],\"col_2\":[{\"value\":\"Latest pattern additions<br>\",\"level\":\"h3\",\"field\":1,\"settings\":{}},{\"value\":\"<p>\\n[[filterLine:tag?\\n    &input=`@FILE [[++romanesco.core_path]]docs\/changelog.txt`\\n    &searchString=`Add `\\n]]\\n<\/p>\\n<p><em>(doesn''t work yet)<\/em><\/p>\\n\",\"lang\":\"html\",\"field\":14,\"settings\":{}}]},\"settings\":[],\"parent\":0,\"title\":\"\"}]","linear":[{"value":"[[$projectHubOuter]]","lang":"html","field":14,"settings":[]},{"value":"Latest pattern additions<br>","level":"h3","field":1,"settings":[]},{"value":"<p>\n[[filterLine:tag?\n    &input=`@FILE [[++romanesco.core_path]]docs\/changelog.txt`\n    &searchString=`Add `\n]]\n<\/p>\n<p><em>(doesn''t work yet)<\/em><\/p>\n","lang":"html","field":14,"settings":[]}],"fieldcounts":{"14":2,"1":1},"_isContentBlocks":true}}'
+properties: '{"contentblocks":{"content":"[{\"layout\":6,\"content\":{\"col_1\":[{\"value\":\"[[$projectHubOuter]]\",\"lang\":\"html\",\"field\":14,\"settings\":[]}],\"col_2\":[{\"value\":\"Latest pattern additions<br>\",\"level\":\"h3\",\"field\":1,\"settings\":[]},{\"value\":\"[[filterLine:replace=`- [==<span class=\\\"ui tiny blue label\\\">`:replace=`[==<span class=\\\"ui tiny label\\\">`:replace=`]==<\/span>`?\\n    &file=`CHANGELOG.md`\\n    &searchString=`- `\\n    &limit=`13`\\n]]\\n\",\"lang\":\"html\",\"field\":14,\"settings\":[]}]},\"settings\":{\"background\":\"white\",\"container_type\":\"\",\"padding\":\"very relaxed\",\"alignment\":\"\",\"divider\":\" \"},\"parent\":0,\"title\":\"\"}]","linear":[{"value":"[[$projectHubOuter]]","lang":"html","field":14,"settings":[]},{"value":"Latest pattern additions<br>","level":"h3","field":1,"settings":[]},{"value":"[[filterLine:replace=`- [==<span class=\"ui tiny blue label\">`:replace=`[==<span class=\"ui tiny label\">`:replace=`]==<\/span>`?\n    &file=`CHANGELOG.md`\n    &searchString=`- `\n    &limit=`13`\n]]\n","lang":"html","field":14,"settings":[]}],"fieldcounts":{"14":2,"1":1},"_isContentBlocks":true}}'
 tvs:
-    project_hub_timeline: ''
+    project_hub_timeline: '[{"MIGX_id":"2","entry_title":"First draft of homepage content","entry_description":"<p>It doesn''t make much sense yet and is only meant to give a general impression of what can be done.</p>","entry_date":"","entry_resources":"","entry_status":"1"},{"MIGX_id":"1","entry_title":"Creation of front-end pattern library ","entry_description":"<p>The goal of the front-end pattern library is to give you an overview of all the available patterns in the system. It briefly describes the purpose of each pattern, informs you about potential caveats and shows its relationships to other patterns.</p><p>Some patterns are accompanied by a Backyard button. This will take you to a sandbox page, which showcases how that pattern looks and behaves in real life. You can also use these pages as your playground, to fiddle with the components and try out new things (or fix bugs).\n</p>","entry_date":"","entry_resources":"","entry_status":"1"}]'
 
 -----
 
-[[setColumnCount? &total=`2`]]
 <div class="ui vertical stripe segment white">
     <div class="ui  container">
-        <div class="ui two column stackable doubling relaxed   grid">
+        <div class="ui two column stackable doubling very relaxed    grid">
             <div class="row">
                 <div class="column">[[!cbRenderCodeField?
     &valueRendered=`[[$projectHubOuter]]`
@@ -32,24 +31,20 @@ tvs:
     &value=`Latest pattern additions<br>`
     &level=`h3`
     &alignment=``
-    &unique_idx=`4`
+    &unique_idx=`2`
 ]]
 
 [[!cbRenderCodeField?
-    &valueRendered=`<p>
-[[filterLine?
-    &input=`@FILE [[++romanesco.core_path]]docs/changelog.txt`
-    &searchString=`Add `
+    &valueRendered=`[[filterLine:replace=`- [==<span class="ui tiny blue label">`:replace=`[==<span class="ui tiny label">`:replace=`]==</span>`?
+    &file=`CHANGELOG.md`
+    &searchString=`- `
+    &limit=`13`
+]]`
+    &valueRaw=`[[filterLine:replace=`- [==<span class="ui tiny blue label">`:replace=`[==<span class="ui tiny label">`:replace=`]==</span>`?
+    &file=`CHANGELOG.md`
+    &searchString=`- `
+    &limit=`13`
 ]]
-</p>
-<p><em>(doesn't work yet)</em></p>`
-    &valueRaw=`<p>
-[[filterLine:tag?
-    &input=`@FILE [[++romanesco.core_path]]docs/changelog.txt`
-    &searchString=`Add `
-]]
-</p>
-<p><em>(doesn't work yet)</em></p>
 `
     &renderTag=`ignore`
 ]]</div>
